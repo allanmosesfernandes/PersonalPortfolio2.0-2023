@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { StyledNavbar, StyledNavbarLinks } from './navbarStyled';
+import Button from '../Button/Button';
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +44,9 @@ function Navbar() {
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
+        <Link to="/blog">
+          <Button>Blog</Button>
+        </Link>
       </StyledNavbarLinks>
     </StyledNavbar>
   );
