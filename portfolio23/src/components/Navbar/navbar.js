@@ -4,9 +4,11 @@ import { StyledNavbar } from './navbarStyled';
 function Navbar() {
   return (
     <StyledNavbar>
-      <span>{"<"}</span>
-      AllanFernandes
-      <span>{"/>"}</span>
+      <h2>
+        <span>{"<"}</span>
+        AllanFernandes
+        <span>{"/>"}</span>
+      </h2>
     </StyledNavbar>
   );
 }

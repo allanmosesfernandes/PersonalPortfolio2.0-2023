@@ -17,6 +17,10 @@ export const StyledNavbar = styled.nav`
   padding: 1rem;
   font-family: "Fira Code", monospace;
   font-size: 1.8rem;
+
+  h2 {
+    font-weight: 500;
+  }
   img {
     width: 80px;
     animation: ${rotateAnimation} 60s infinite linear; /* Adjust the duration (10s) for desired speed */
