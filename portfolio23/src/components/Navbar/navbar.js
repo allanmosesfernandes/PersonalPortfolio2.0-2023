@@ -41,9 +41,9 @@ function Navbar() {
         </Link>
       )}
       <StyledNavbarLinks>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/about">about</Link>
+        <Link to="/projects">projects</Link>
+        <Link to="/contact">contact</Link>
         <Link to="/blog">
           <Button>Blog</Button>
         </Link>
