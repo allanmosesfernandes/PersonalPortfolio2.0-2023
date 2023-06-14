@@ -2,12 +2,15 @@ import React from 'react';
 import Navbar from './navbar';
 import Footer from './footer';
 
-const layout = ({ children }) => (
-  <>
-    <Navbar />
-    {children}
-    <Footer />
-  </>
-);
+// eslint-disable-next-line react/prop-types
+function Layout({ children }) {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
+}
 
-export default layout;
+export default Layout;
