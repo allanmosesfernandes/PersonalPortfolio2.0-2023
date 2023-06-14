@@ -1,9 +1,10 @@
-import React from 'react'
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
 
-const PageNotFound = () => {
+function PageNotFound() {
   return (
     <div>PageNotFound</div>
-  )
+  );
 }
 
-export default PageNotFound
+export default PageNotFound;
