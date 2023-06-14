@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { StyledNavbar } from './navbarStyled';
+import { Link } from 'gatsby';
+import { StyledNavbar, StyledNavbarLinks } from './navbarStyled';
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,21 +22,29 @@ function Navbar() {
 
   return (
     <StyledNavbar>
-      {isMobile
-        ? (
+      {isMobile ? (
+        <Link to="/">
           <h2>
-            <span>{'<'}</span>
+            <span>{"<"}</span>
             AllanF
-            <span>{'/>'}</span>
+            <span>/{">"}</span>
           </h2>
-        )
-        : (
+        </Link>
+      ) : (
+        <Link to="/">
           <h2>
-            <span>{'<'}</span>
+            <span>{"<"}</span>
             AllanFernandes
-            <span>{'/>'}</span>
+            <span>/{">"}</span>
           </h2>
-        )}
+        </Link>
+      )}
+      <StyledNavbarLinks>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/blog">Blog</Link>
+      </StyledNavbarLinks>
     </StyledNavbar>
   );
 }
