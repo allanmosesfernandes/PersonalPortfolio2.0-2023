@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 :root {
-    
+  --base-black:  #192227;
+  --base-orange: #F9A600;
 }
 *,
 *:before,
@@ -12,8 +13,10 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    background-color: #000;
+    background-color: var(--base-black);
     background-size: cover;
+    color: white;
+    font-size: 10px;
 }
 
 .gatsby-image-wrapper img[src*=base64\\,] {
