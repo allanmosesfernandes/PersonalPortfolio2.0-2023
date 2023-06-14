@@ -26,17 +26,13 @@ function Navbar() {
       {isMobile ? (
         <Link to="/">
           <h2>
-            <span>{"<"}</span>
             AllanF
-            <span>/{">"}</span>
           </h2>
         </Link>
       ) : (
         <Link to="/">
           <h2>
-            <span>{"<"}</span>
-            AllanFernandes
-            <span>/{">"}</span>
+            <em>allanFernandes</em>
           </h2>
         </Link>
       )}
@@ -44,10 +40,10 @@ function Navbar() {
         <Link to="/about">about</Link>
         <Link to="/projects">projects</Link>
         <Link to="/contact">contact</Link>
-        <Link to="/blog">
-          <Button>Blog</Button>
-        </Link>
       </StyledNavbarLinks>
+      <Link to="/blog">
+        <Button>Blog</Button>
+      </Link>
     </StyledNavbar>
   );
 }

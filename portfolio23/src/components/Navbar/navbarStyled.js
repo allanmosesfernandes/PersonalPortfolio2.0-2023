@@ -26,13 +26,22 @@ const blinkAnimation = keyframes`
 export const StyledNavbar = styled.nav`
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   font-family: "Fira Code", monospace;
-
+  font-size: 2rem;
+  justify-content: space-between;
+  background: rgb(0 0 0 / 23%);
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+  &:hover {
+    background: rgb(0 0 0);
+    border: 2px solid var(--base-orange);
+  }
+  border-radius: 50px;
+  margin: 3rem;
   h2 {
     font-weight: 500;
     font-size: 2.5rem;
-    //Give Span element a blinking effect using animation
     span {
       color: var(--base-orange);
       animation: ${blinkAnimation} 3s infinite;
@@ -40,16 +49,15 @@ export const StyledNavbar = styled.nav`
   }
   img {
     width: 80px;
-    animation: ${rotateAnimation} 60s infinite linear; /* Adjust the duration (10s) for desired speed */
+    animation: ${rotateAnimation} 60s infinite linear;
+    /* Adjust the duration (10s) for desired speed */
   }
 `;
 export const StyledNavbarLinks = styled.div`
   display: flex;
   align-items: center;
-  margin-left: auto;
   a {
     margin-left: 2rem;
-    font-size: 2rem;
     color: var(--base-orange);
     transition: all 0.2s ease-in-out;
     background-position-y: bottom;
@@ -64,10 +72,7 @@ export const StyledNavbarLinks = styled.div`
       border-bottom: none;
       transition: all 0.2s ease-in-out;
     }
-    &:last-child {
-      border-bottom: none;
-      background-image: none;
-    }
+
   }
 `;
 
