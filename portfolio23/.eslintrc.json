@@ -10,6 +10,7 @@
   },
   "rules": {
     "no-console": "warn",
+    "quotes": ["error", "single"],
     "linebreak-style": ["error", "windows"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }

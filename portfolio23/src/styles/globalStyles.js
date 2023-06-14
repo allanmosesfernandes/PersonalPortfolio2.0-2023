@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
 :root {
   --base-black:  #192227;
   --base-orange: #F9A600;
+    font-size: 10px;
+
 }
 *,
 *:before,
@@ -16,7 +18,6 @@ body {
     background-color: var(--base-black);
     background-size: cover;
     color: white;
-    font-size: 10px;
 }
 
 .gatsby-image-wrapper img[src*=base64\\,] {
