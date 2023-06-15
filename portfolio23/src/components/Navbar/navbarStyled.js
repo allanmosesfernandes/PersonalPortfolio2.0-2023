@@ -23,82 +23,61 @@ const blinkAnimation = keyframes`
   }
 `;
 
-export const StyledHamburger = styled.div`
-  /* Icon 3 */
-  width: 50px;
-  height: 20px;
+export const MenuToggle = styled.div`
+cursor: pointer;
+
+.hamBox {
   position: relative;
-  margin-left: auto;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
-  span {
-    display: block;
-    position: absolute;
-    height: 5px;
-    width: 100%;
-    background: #d3531a;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  padding: 2.4em;
+  &:hover {
+    background: #2a2a2f;
   }
 
-  span:nth-child(1) {
-    top: 0px;
-  }
+}
 
-  span:nth-child(2),
-  span:nth-child(3) {
-    top: 18px;
-  }
+.hamBoxOpen {
+  background: #2a2a2f;
+}
 
-  span:nth-child(4) {
-    top: 36px;
-  }
+.lineTop, .lineBottom {
+  margin: 0 auto;
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  left: 0;
+  right: 0; 
+  transform: rotate(0deg); 
+  transition: all 0.5s ease-in-out;
+}
 
-  .open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-
-  .open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  .open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
-  .open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
+.lineTop {
+  top: 2.2em;
+}
+.lineBottom {
+  bottom: 2.2em;
+}
 `;
 // Apply the animation to the image
 export const StyledNavbar = styled.nav`
-
+  .nav-overlay {
+    position: fixed;
+    top: -100%;
+    background-color: #18181c;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 3rem;
+  }
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
