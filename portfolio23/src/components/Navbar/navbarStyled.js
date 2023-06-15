@@ -28,6 +28,7 @@ cursor: pointer;
 
 .hamBox {
   position: relative;
+  z-index: 2;
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -84,7 +85,7 @@ export const StyledNavbar = styled.nav`
     top: -100%;
     background-color: #18181c;
     left: 0;
-    z-index: -2;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -120,6 +121,17 @@ export const StyledNavbar = styled.nav`
     animation: ${rotateAnimation} 60s infinite linear;
     /* Adjust the duration (10s) for desired speed */
   }
+
+  @media screen and (max-width: 768px) {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    &:hover {
+      background: none;
+      border: none;
+    }
+  }
 `;
 export const StyledNavbarLinks = styled.div`
   display: flex;
@@ -140,8 +152,8 @@ export const StyledNavbarLinks = styled.div`
       border-bottom: none;
       transition: all 0.2s ease-in-out;
     }
-
   }
+
 `;
 
 export const StyledHamburgerList = styled.ul`
@@ -163,7 +175,6 @@ export const StyledHamburgerList = styled.ul`
     padding: 0.5em 0;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #fff;
     transition: all 0.2s ease-in-out;
     &:hover {
       background: #2a2a2f;
