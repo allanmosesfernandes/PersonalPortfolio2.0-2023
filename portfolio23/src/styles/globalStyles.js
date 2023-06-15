@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import customCursor from '../assets/images/home/cursor.png';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -13,7 +14,9 @@ const GlobalStyle = createGlobalStyle`
 *:after {
     box-sizing: border-box;
 }
-
+html {
+  cursor: url(${customCursor}), auto;
+}
 body {
     background-color: var(--base-black);
     background-size: cover;
