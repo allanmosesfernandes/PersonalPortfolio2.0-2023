@@ -33,6 +33,7 @@ export const StyledNavbar = styled.nav`
   background: rgb(0 0 0 / 23%);
   transition: all 0.2s ease-in-out;
   border: 2px solid transparent;
+
   &:hover {
     background: rgb(0 0 0);
     border: 2px solid var(--base-orange);
