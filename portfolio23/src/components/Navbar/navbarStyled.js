@@ -32,7 +32,7 @@ cursor: pointer;
   height: 44px;
   cursor: pointer;
   border-radius: 50%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 2.4em;
   &:hover {
     background: #2a2a2f;
@@ -42,6 +42,7 @@ cursor: pointer;
 
 .hamBoxOpen {
   background: #2a2a2f;
+  position: relative;
 }
 
 .lineTop, .lineBottom {
@@ -59,9 +60,21 @@ cursor: pointer;
 
 .lineTop {
   top: 2.2em;
+
+  &.spin {
+    transform: rotate(135deg);
+    top: 2.35em;
+    background-color: #fff;
+  };
 }
 .lineBottom {
   bottom: 2.2em;
+
+  &.spin {
+    transform: rotate(225deg);
+    background: #fff;
+    bottom: 2.35em;
+  }
 }
 `;
 // Apply the animation to the image

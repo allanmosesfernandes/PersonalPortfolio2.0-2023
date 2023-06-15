@@ -31,13 +31,17 @@ function Navbar() {
       {isMobile ? (
         <>
           <Link to="/">
-            <h2>AllanF</h2>
+            <h2></h2>
           </Link>
           {showHamburger && (
-            <MenuToggle>
-              <div className="hamBox">
-                <span className="lineTop" />
-                <span className="lineBottom" />
+            <MenuToggle onClick={toggleHamburgerMenu}>
+              <div className={toggleHamburger ? 'hamBox hamBoxOpen' : 'hamBox'}>
+                <span
+                  className={toggleHamburger ? 'lineTop spin' : 'lineTop'}
+                />
+                <span
+                  className={toggleHamburger ? 'lineBottom spin' : 'lineBottom'}
+                />
               </div>
             </MenuToggle>
           )}
@@ -45,9 +49,7 @@ function Navbar() {
       ) : (
         <>
           <Link to="/">
-            <h2>
-              <em>allanFernandes</em>
-            </h2>
+            <h2></h2>
           </Link>
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
@@ -59,7 +61,13 @@ function Navbar() {
           </Link>
         </>
       )}
-      <div className="nav-overlay" />
+      <div
+        className="nav-overlay"
+        style={{
+          top: toggleHamburger ? '0' : '-100%',
+          transitionDelay: toggleHamburger ? '0.5s' : '0s',
+        }}
+      />
     </StyledNavbar>
   );
 }
