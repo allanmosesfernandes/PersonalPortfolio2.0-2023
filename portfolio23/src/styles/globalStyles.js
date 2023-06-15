@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import customCursor from '../assets/images/home/cursor.png';
+import customCursor from "../assets/images/home/icons8-cursor.svg";
 
 const GlobalStyle = createGlobalStyle`
 
