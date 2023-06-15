@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
-import { StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
+import { slide as Menu } from "react-burger-menu";
+import { StyledHamburger, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
+import './nav.css';
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
   const [showHamburger, setShowHamburger] = useState(false);
+  const [toggleHamburger, setToggleHamburger] = useState(false);
 
+  const toggleHamburgerMenu = () => { setToggleHamburger(!toggleHamburger); };
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -32,12 +36,18 @@ function Navbar() {
             <h2>AllanF</h2>
           </Link>
           {showHamburger && (
-            <div id="nav-icon3">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+            <Menu>
+              <a id="home" className="menu-item" href="/">
+                Home
+              </a>
+              <a id="about" className="menu-item" href="/about">
+                About
+              </a>
+              <a id="contact" className="menu-item" href="/contact">
+                Contact
+              </a>
+
+            </Menu>
           )}
         </>
       ) : (
