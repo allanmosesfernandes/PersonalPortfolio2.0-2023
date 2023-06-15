@@ -144,4 +144,59 @@ export const StyledNavbarLinks = styled.div`
   }
 `;
 
-export const StyledNavbarHead = styled.div``;
+export const StyledHamburgerList = styled.ul`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .hamburger__link {
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.5em 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #2a2a2f;
+      border-bottom: 1px solid #2a2a2f;
+      transition: all 0.2s ease-in-out;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: var(--base-orange);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    .hamburger__link__wrapper {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 120px;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        background: #18181c;
+        margin: 0 auto;
+        transition: all 2s ease-in-out;
+      }
+    }
+    &:hover .hamburget__link__wrapper {
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+`;

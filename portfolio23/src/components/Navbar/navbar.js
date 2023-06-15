@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "gatsby";
-import { MenuToggle, StyledHamburger, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
+import { Link } from 'gatsby';
+import { MenuToggle, StyledHamburger, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
 
 function Navbar() {
@@ -35,12 +35,12 @@ function Navbar() {
           </Link>
           {showHamburger && (
             <MenuToggle onClick={toggleHamburgerMenu}>
-              <div className={toggleHamburger ? 'hamBox hamBoxOpen' : 'hamBox'}>
+              <div className={toggleHamburger ? "hamBox hamBoxOpen" : "hamBox"}>
                 <span
-                  className={toggleHamburger ? 'lineTop spin' : 'lineTop'}
+                  className={toggleHamburger ? "lineTop spin" : "lineTop"}
                 />
                 <span
-                  className={toggleHamburger ? 'lineBottom spin' : 'lineBottom'}
+                  className={toggleHamburger ? "lineBottom spin" : "lineBottom"}
                 />
               </div>
             </MenuToggle>
@@ -64,10 +64,44 @@ function Navbar() {
       <div
         className="nav-overlay"
         style={{
-          top: toggleHamburger ? '0' : '-100%',
-          transitionDelay: toggleHamburger ? '0.5s' : '0s',
+          top: toggleHamburger ? "0" : "-100%",
+          transitionDelay: toggleHamburger ? "0.5s" : "0s",
         }}
-      />
+      >
+        <StyledHamburgerList>
+          <li className="hamburger__link">
+            <Link
+              to="/"
+              onClick={toggleHamburgerMenu}
+              style={{
+                top: toggleHamburger ? "0" : "120px",
+                transitionDelay: toggleHamburger ? "0.8s" : "0s" 
+              }}
+            >
+              Home
+            </Link>
+            <div className="hamburger__link__wrapper" />
+          </li>
+          <li className="hamburger__link">
+            <Link to="/about" onClick={toggleHamburgerMenu}>
+              About
+            </Link>
+            <div className="hamburger__link__wrapper" />
+          </li>
+          <li className="hamburger__link">
+            <Link to="/" onClick={toggleHamburgerMenu}>
+              Works
+            </Link>
+            <div className="hamburger__link__wrapper" />
+          </li>
+          <li className="hamburger__link">
+            <Link to="/" onClick={toggleHamburgerMenu}>
+              Contact
+            </Link>
+            <div className="hamburger__link__wrapper" />
+          </li>
+        </StyledHamburgerList>
+      </div>
     </StyledNavbar>
   );
 }
