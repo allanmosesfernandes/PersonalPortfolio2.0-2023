@@ -98,13 +98,11 @@ export const StyledNavbar = styled.nav`
   font-family: "Fira Code", monospace;
   font-size: 2rem;
   justify-content: space-between;
-  background: rgb(0 0 0 / 23%);
   transition: all 0.2s ease-in-out;
-  border: 2px solid transparent;
-
+  background: rgb(0 0 0);
+  border: 2px solid var(--base-orange);
   &:hover {
-    background: rgb(0 0 0);
-    border: 2px solid var(--base-orange);
+    background: rgb(0 0 0 / 23%);
   }
   border-radius: 50px;
   margin: 3rem;
