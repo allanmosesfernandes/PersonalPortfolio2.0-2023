@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
 
 export const FirstFoldContainer = styled.div`
   background-color: #ffffff;
@@ -27,4 +28,33 @@ export const FirstFoldContainer = styled.div`
 
 export const FirstFold = styled.div`
 
+`;
+
+export const FlightPath = styled.div`
+  display: flex;
+  align-items: center;
+  color: #d1cece;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Fira Code", monospace;
+  width: 50%;
+  height: min-content;
+  .flight-path__line {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 4px,
+      rgb(209, 206, 206) 4px,
+      rgb(209, 206, 206) 6px
+    );
+
+    img {
+      width: 30px;
+    }
+  }
 `;

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import customCursor from "../assets/images/home/icons8-cursor.svg";
+import PPMoriRegular from "../assets/fonts/PPMori-Regular.otf";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -7,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   --base-black:  #192227;
   --base-orange: #F9A600;
     font-size: 10px;
-
 }
 *,
 *:before,
@@ -21,6 +21,13 @@ body {
     background-color: var(--base-black);
     background-size: cover;
     color: white;
+}
+
+@font-face {
+  font-family: 'PPMori-Regular', sans-serif;
+  src: url(${PPMoriRegular}) format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 button {
   border: none;
