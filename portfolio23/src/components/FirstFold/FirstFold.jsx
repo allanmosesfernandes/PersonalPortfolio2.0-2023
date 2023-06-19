@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { FirstFoldContainer, FlightPath } from './FirstFoldStyles';
 import nerd from '../../assets/images/home/nerd.png';
@@ -17,6 +18,10 @@ function FirstFold() {
         <div className="body-copy">
           <p>
             My name is Allan, a front-end developer based in Nottingham UK.
+            <br />
+          </p>
+          <p>
+            I like  b̶r̶e̶a̶k̶i̶n̶g̶ making cool things that live on the internet.
           </p>
         </div>
       </div>
