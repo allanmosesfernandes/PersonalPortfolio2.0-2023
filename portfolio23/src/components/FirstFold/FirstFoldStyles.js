@@ -13,7 +13,7 @@ export const FirstFoldContainer = styled.div`
     .body-copy {
       color: var(--base-orange);
       font-size: 2rem;
-      font-family: ;
+      font-family: "Fira Code";
     }
 
   }
