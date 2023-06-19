@@ -6,15 +6,19 @@ import Flight from "../../assets/images/home/flight.svg";
 function FirstFold() {
   return (
     <FirstFoldContainer className="wrapper">
-      <FlightPath>
-        <p className="flight-path__origin">BOM</p>
-        <div className="flight-path__line">
-          <img src={Flight} alt="Flight" />
-        </div>
-        <p className="flight-path__origin">LHR</p>
-      </FlightPath>
       <div className="firstFold__left">
-        <h2>hi</h2>
+        <FlightPath>
+          <p className="flight-path__origin">BOM</p>
+          <div className="flight-path__line">
+            <img src={Flight} alt="Flight" />
+          </div>
+          <p className="flight-path__origin">LHR</p>
+        </FlightPath>
+        <div className="body-copy">
+          <p>
+            My name is Allan, a front-end developer based in Nottingham UK.
+          </p>
+        </div>
       </div>
       <div className="firstFold__right">
         <div className="window-pane" />

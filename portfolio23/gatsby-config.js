@@ -6,6 +6,8 @@
 
 /**
  * @type {import('gatsby').GatsbyConfig}
+ *
+ * 
  */
 module.exports = {
   plugins: [
@@ -26,7 +28,11 @@ module.exports = {
         web: [
           {
             name: "Fira Code",
-            file: "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap",
+            file: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap',
+          },
+          {
+            name: 'PPMori-Regular',
+            file: './src/assets/fonts/PPMori-Regular.otf',
           },
         ],
       },
