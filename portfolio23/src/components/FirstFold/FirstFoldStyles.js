@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 
 export const FirstFoldContainer = styled.div`
@@ -14,8 +14,8 @@ export const FirstFoldContainer = styled.div`
     margin-left: auto;
     border-radius: 60px;
     position: relative;
-    background-color: var(--base-orange);
-    //make it in the shape of an airplane window
+    background-color: #89BFD9;
+//==make it in the shape of an airplane window==//
     clip-path: ellipse(35% 50% at 50% 50%);
     display: flex;
     flex-direction: column;
@@ -23,11 +23,22 @@ export const FirstFoldContainer = styled.div`
     align-items: center;
     padding: 2rem;
 
+    img {
+      width: 80%;
+    }
   }
 `;
 
 export const FirstFold = styled.div`
 
+`;
+const flightAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1700%);
+  }
 `;
 
 export const FlightPath = styled.div`
@@ -39,12 +50,15 @@ export const FlightPath = styled.div`
   font-family: "Fira Code", monospace;
   width: 50%;
   height: min-content;
+
   .flight-path__line {
     width: 100%;
+    margin: 0 3rem;
     height: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background: repeating-linear-gradient(
       to right,
       transparent,
@@ -55,6 +69,9 @@ export const FlightPath = styled.div`
 
     img {
       width: 30px;
+      position: absolute;
+      left: 0;
+      animation: ${flightAnimation} 20s linear infinite;
     }
   }
 `;

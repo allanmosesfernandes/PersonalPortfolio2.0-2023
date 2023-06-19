@@ -9,7 +9,7 @@ function FirstFold() {
       <FlightPath>
         <p className="flight-path__origin">BOM</p>
         <div className="flight-path__line">
-          <img src={Flight} alt='Flight'/>
+          <img src={Flight} alt="Flight" />
         </div>
         <p className="flight-path__origin">LHR</p>
       </FlightPath>
