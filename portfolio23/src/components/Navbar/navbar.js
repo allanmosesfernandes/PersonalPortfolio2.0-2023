@@ -49,7 +49,7 @@ function Navbar() {
       ) : (
         <>
           <Link to="/">
-            <h2>allan</h2>
+            <h2>Allan Fernandes</h2>
           </Link>
           <StyledNavbarLinks>
             <Link to="/about">about</Link>

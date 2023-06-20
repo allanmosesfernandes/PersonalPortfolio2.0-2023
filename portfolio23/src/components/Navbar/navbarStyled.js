@@ -99,13 +99,15 @@ export const StyledNavbar = styled.nav`
   font-size: 2rem;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
-  background: rgb(0 0 0);
+  background: #000000;
+  z-index: 1;
+  position: relative;
   border-bottom: 2px solid var(--base-orange);
   margin-bottom: 3rem;
   //blur the navbar 
   h2 {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
     span {
       color: var(--base-orange);
       animation: ${blinkAnimation} 3s infinite;
