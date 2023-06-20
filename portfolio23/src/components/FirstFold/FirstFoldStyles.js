@@ -41,19 +41,7 @@ export const FirstFoldContainer = styled.div`
             //rotate the asterik on hover
           }
         }
-        &::after {
-          content: "";
-          background-image: url(${Asterik});
-          width: 100%;
-          position: absolute;
-          transform: translate(30px, -10px);
-          height: 100%;
-          background-size: 30px;
-          background-repeat: no-repeat;
-          //animate on hover
-          transition: transform 0.3s ease-in-out;
-          animation: ${rotateAsterik} 3s linear infinite;
-        }
+
         img {
           position: absolute;
           left: -15px;
