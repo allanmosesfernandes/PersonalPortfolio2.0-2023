@@ -26,12 +26,15 @@ function FirstFold() {
               <img src={Circle} alt="circle" />
               front-end developer{" "}
             </span>{" "}
-            born in goa{" "}
+            {/* born in goa{" "}
             <img src={Wave} alt="Beach Waves" className="apple__emojis" />,
-            raised in Mumbai{" "}
-            <img src={Auto} alt="Auto" className="apple__emojis" />, based in
-            Nottingham <img src={Bow} alt="Bow" className="apple__emojis" />
             <br />
+            raised in Mumbai{" "}
+            <img src={Auto} alt="Auto" className="apple__emojis" />, 
+            <br />
+            based in
+            Nottingham <img src={Bow} alt="Bow" className="apple__emojis" />
+            <br /> */}
           </p>
           <p>
             I like
