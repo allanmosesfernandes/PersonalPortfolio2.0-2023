@@ -1,7 +1,12 @@
 import styled, { keyframes } from 'styled-components';
+import Grainy from "../../assets/images/home/bg-grain.png";
 
 export const FirstFoldContainer = styled.div`
   background-color: #ffffff;
+  background-image: url(${Grainy});
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -61,7 +66,7 @@ const flightAnimation = keyframes`
     transform: translateX(0);
   }
   100% {
-    transform: translateX(1700%);
+    transform: translateX(850%);
   }
 `;
 
@@ -73,7 +78,7 @@ export const FlightPath = styled.div`
   font-size: 2rem;
   font-family: "Fira Code", monospace;
   height: min-content;
-
+  width: 50%;
   .flight-path__line {
     width: 100%;
     margin: 0 3rem;
@@ -94,7 +99,7 @@ export const FlightPath = styled.div`
       width: 30px;
       position: absolute;
       left: 0;
-      animation: ${flightAnimation} 20s linear infinite;
+      animation: ${flightAnimation} 10s linear infinite;
     }
   }
 `;
