@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import customCursor from "../assets/images/home/icons8-cursor.svg";
 import PPMoriRegular from "../assets/fonts/PPMori-Regular.otf";
+import Grid from "../assets/images/home/grid.svg";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -21,6 +22,20 @@ body {
     background-color: var(--base-black);
     background-size: cover;
     color: white;
+
+    &:before {
+      content: "";
+      background-image: url(${Grid});
+      background-size: 100%;
+      position: fixed;
+      top: 0;
+      left: 6rem;
+      right: 6rem;
+      bottom: 0;
+      transform: scaleY(var(--zero));
+      transform-origin: 0 0;
+      z-index: 1;
+    }
 }
 
 @font-face {

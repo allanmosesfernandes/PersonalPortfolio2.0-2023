@@ -102,6 +102,7 @@ export const StyledNavbar = styled.nav`
   background: rgb(0 0 0);
   border-bottom: 2px solid var(--base-orange);
   margin-bottom: 3rem;
+  //blur the navbar 
   h2 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -137,6 +138,7 @@ export const StyledNavbarLinks = styled.div`
     background-position-y: bottom;
     border-bottom: 1px dashed var(--base-orange);
     position: relative;
+    
     &:hover {
       color: white;
       background-image: url(${squiggly});

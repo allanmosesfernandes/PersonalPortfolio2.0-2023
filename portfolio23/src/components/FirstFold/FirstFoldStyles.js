@@ -6,14 +6,14 @@ export const FirstFoldContainer = styled.div`
   width: 100%;
   display: flex;
   padding: 2rem;
-
+  z-index: 99;
   .firstFold__left {
     width: 60%;
 
     .body-copy {
-      color: var(--base-orange);
-      font-size: 2rem;
+      font-size: 4rem;
       font-family: "Fira Code";
+      color: #000000;      
     }
 
   }

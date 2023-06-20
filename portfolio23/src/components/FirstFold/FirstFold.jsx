@@ -3,6 +3,7 @@ import React from 'react';
 import { FirstFoldContainer, FlightPath } from './FirstFoldStyles';
 import nerd from '../../assets/images/home/nerd.png';
 import Flight from "../../assets/images/home/flight.svg";
+import Circle from "../../assets/images/home/circleSVG.svg";
 
 function FirstFold() {
   return (
@@ -17,12 +18,17 @@ function FirstFold() {
         </FlightPath>
         <div className="body-copy">
           <p>
-            My name is Allan, a front-end developer based in Nottingham UK.
+            My name is Allan, a
+            {' '}
+            <span className="rel">
+              {/* <img src={Circle} alt="circle" /> */}
+              front-end developer
+            </span>
+            {' '}
+            based in Nottingham UK.
             <br />
           </p>
-          <p>
-            I like  b̶r̶e̶a̶k̶i̶n̶g̶ making cool things that live on the internet.
-          </p>
+          <p>I like b̶r̶e̶a̶k̶i̶n̶g̶ making cool things that live on the internet.</p>
         </div>
       </div>
       <div className="firstFold__right">
