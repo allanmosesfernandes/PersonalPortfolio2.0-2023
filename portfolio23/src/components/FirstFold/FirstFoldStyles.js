@@ -34,7 +34,7 @@ export const FirstFoldContainer = styled.div`
     //code goes here
     flex-direction: column;
     .firstFold__left {
-      width: 100%;
+      width: 100% !important;
     }
   }
   .firstFold__left {
@@ -78,6 +78,23 @@ export const FirstFoldContainer = styled.div`
 
       .apple__emojis {
         width: 50px;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      //code goes here
+
+      .body-copy {
+        font-size: var(--fs1-5);
+        .rel {
+          font-size: var(--fs2);
+          font-weight: bold;
+
+          img {
+            left: -15px;
+            top: -13px;
+            width: 80%;
+          }
+        }
       }
     }
   }
@@ -141,6 +158,17 @@ export const FlightPath = styled.div`
       position: absolute;
       left: 0;
       animation: ${flightAnimation} 10s linear infinite;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    width: 100%;
+    font-size: 1.4rem;
+
+    .flight-path__line {
+      img {
+        width: 20px;
+      }
     }
   }
 `;

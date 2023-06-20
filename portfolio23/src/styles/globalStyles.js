@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     --fs3: 3rem; 
     --fs2: 2rem;
     --fs1: 1rem;
+    --fs1-5: 1.5rem;
     --fs0: 0.5rem;
 }
 *,
