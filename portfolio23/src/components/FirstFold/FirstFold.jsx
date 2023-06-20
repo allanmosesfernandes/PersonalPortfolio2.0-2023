@@ -7,6 +7,7 @@ import Circle from "../../assets/images/home/circleSVG.svg";
 import Wave from "../../assets/images/home/wave.png";
 import Bow from "../../assets/images/home/bow.png";
 import Auto from "../../assets/images/home/auto.png";
+import Scratch from "../../assets/images/home/scratch.png";
 
 function FirstFold() {
   return (
@@ -25,20 +26,21 @@ function FirstFold() {
               <img src={Circle} alt="circle" />
               front-end developer{" "}
             </span>{" "}
-            born in goa
-{" "}
-            <img src={Wave} alt="Beach Waves" className="apple__emojis" />
-            ,
-            raised in Mumbai
-            {' '}
-            <img src={Auto} alt="Auto" className="apple__emojis" />
-            , based in Nottingham
-            {' '}
-            {' '}
-            <img src={Bow} alt="Bow" className="apple__emojis" />
+            born in goa{" "}
+            <img src={Wave} alt="Beach Waves" className="apple__emojis" />,
+            raised in Mumbai{" "}
+            <img src={Auto} alt="Auto" className="apple__emojis" />, based in
+            Nottingham <img src={Bow} alt="Bow" className="apple__emojis" />
             <br />
           </p>
-          <p>I like b̶r̶e̶a̶k̶i̶n̶g̶ making cool things that live on the internet.</p>
+          <p>
+            I like
+            <span className="relative">
+              <img src={Scratch} alt="asd" />
+              breaking
+            </span>
+            making cool things that live on the internet.
+          </p>
         </div>
       </div>
       <div className="firstFold__right">

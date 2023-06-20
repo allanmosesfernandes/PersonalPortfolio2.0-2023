@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
 
 export const FirstFoldContainer = styled.div`
@@ -34,6 +34,18 @@ export const FirstFoldContainer = styled.div`
         }
       }
 
+      .relative {
+        position: relative;
+        display: inline-block;
+        margin: 0 1.5rem;
+        img {
+          position: absolute;
+          left: 0;
+          top: -85px;
+          width: 100%;
+        }
+      }
+
       .apple__emojis {
         width: 50px;
       }
@@ -58,9 +70,7 @@ export const FirstFoldContainer = styled.div`
   }
 `;
 
-export const FirstFold = styled.div`
-
-`;
+export const FirstFold = styled.div``;
 const flightAnimation = keyframes`
   0% {
     transform: translateX(0);
