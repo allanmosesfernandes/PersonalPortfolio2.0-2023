@@ -1,9 +1,12 @@
 /* eslint-disable max-len */
-import React from 'react';
-import { FirstFoldContainer, FlightPath } from './FirstFoldStyles';
-import nerd from '../../assets/images/home/nerd.png';
+import React from "react";
+import { FirstFoldContainer, FlightPath } from "./FirstFoldStyles";
+import nerd from "../../assets/images/home/nerd.png";
 import Flight from "../../assets/images/home/flight.svg";
 import Circle from "../../assets/images/home/circleSVG.svg";
+import Wave from "../../assets/images/home/wave.png";
+import Bow from "../../assets/images/home/bow.png";
+import Auto from "../../assets/images/home/auto.png";
 
 function FirstFold() {
   return (
@@ -18,14 +21,21 @@ function FirstFold() {
         </FlightPath>
         <div className="body-copy">
           <p>
-            My name is Allan, a
-            {' '}
             <span className="rel">
-              {/* <img src={Circle} alt="circle" /> */}
-              front-end developer
-            </span>
+              <img src={Circle} alt="circle" />
+              front-end developer{" "}
+            </span>{" "}
+            born in goa
+{" "}
+            <img src={Wave} alt="Beach Waves" className="apple__emojis" />
+            ,
+            raised in Mumbai
             {' '}
-            based in Nottingham UK.
+            <img src={Auto} alt="Auto" className="apple__emojis" />
+            , based in Nottingham
+            {' '}
+            {' '}
+            <img src={Bow} alt="Bow" className="apple__emojis" />
             <br />
           </p>
           <p>I like b̶r̶e̶a̶k̶i̶n̶g̶ making cool things that live on the internet.</p>

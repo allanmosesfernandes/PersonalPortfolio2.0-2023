@@ -6,16 +6,33 @@ export const FirstFoldContainer = styled.div`
   width: 100%;
   display: flex;
   padding: 2rem;
-  z-index: 99;
+  z-index: 2;
   .firstFold__left {
     width: 60%;
 
     .body-copy {
       font-size: 4rem;
       font-family: "Fira Code";
-      color: #000000;      
-    }
+      color: #000000;
 
+      .rel {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+
+        img {
+          position: absolute;
+          left: -15px;
+          top: -24px;
+          width: 60%;
+        }
+      }
+
+      .apple__emojis {
+        width: 50px;
+      }
+    }
   }
   .firstFold__right {
     margin-left: auto;
