@@ -1,5 +1,15 @@
 import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
+import Asterik from "../../assets/images/home/asterik.svg";
+
+const rotateAsterik = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+`;
 
 export const FirstFoldContainer = styled.div`
   background-color: #ffffff;
@@ -26,6 +36,24 @@ export const FirstFoldContainer = styled.div`
         width: 100%;
         margin: 1rem 0;
 
+        &:hover {
+          &::after {
+            //rotate the asterik on hover
+          }
+        }
+        &::after {
+          content: "";
+          background-image: url(${Asterik});
+          width: 100%;
+          position: absolute;
+          transform: translate(30px, -10px);
+          height: 100%;
+          background-size: 30px;
+          background-repeat: no-repeat;
+          //animate on hover
+          transition: transform 0.3s ease-in-out;
+          animation: ${rotateAsterik} 3s linear infinite;
+        }
         img {
           position: absolute;
           left: -15px;
