@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from "react";
-import { FirstFoldContainer, FlightPath } from "./FirstFoldStyles";
+import { AsterikIcon, FirstFoldContainer, FlightPath } from "./FirstFoldStyles";
 import nerd from "../../assets/images/home/nerd.png";
 import Flight from "../../assets/images/home/flight.svg";
 import Circle from "../../assets/images/home/circleSVG.svg";
@@ -8,10 +8,11 @@ import Wave from "../../assets/images/home/wave.png";
 import Bow from "../../assets/images/home/bow.png";
 import Auto from "../../assets/images/home/auto.png";
 import Scratch from "../../assets/images/home/scratch.png";
+import asterik from "../../assets/images/home/asterik.svg";
 
 function FirstFold() {
   return (
-    <FirstFoldContainer className="wrapper">
+    <FirstFoldContainer className="wrapper" id="blackCursor">
       <div className="firstFold__left">
         <FlightPath>
           <p className="flight-path__origin">BOM</p>
@@ -43,6 +44,15 @@ function FirstFold() {
               breaking
             </span>
             making cool things that live on the internet.
+          </p>
+          <p>
+            I've been making websites for the past two and a half years often
+            using pure Javascript, (S)CSS, jQuery and other random web tech.
+          </p>
+          <p>
+            {" "}
+            I'm currently messing around and trying to get better at NextJS &
+            Node.js.
           </p>
         </div>
       </div>

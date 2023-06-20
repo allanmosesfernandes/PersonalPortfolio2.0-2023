@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
 import Asterik from "../../assets/images/home/asterik.svg";
+import CursorBlack from "../../assets/images/home/cursorblack.svg";
+import CursorWhite from "../../assets/images/home/icons8-cursor.svg";
 
 const rotateAsterik = keyframes`
   0% {
@@ -9,6 +11,12 @@ const rotateAsterik = keyframes`
   100% {
     transform: rotate(180deg);
   }
+`;
+
+export const AsterikIcon = styled.img`
+  position: absolute;
+  right: 0;
+  top: 10px;
 `;
 
 export const FirstFoldContainer = styled.div`
@@ -22,20 +30,27 @@ export const FirstFoldContainer = styled.div`
   display: flex;
   padding: 2rem;
   z-index: 2;
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    flex-direction: column;
+    .firstFold__left {
+      width: 100%;
+    }
+  }
   .firstFold__left {
     width: 60%;
-
     .body-copy {
-      font-size: 4rem;
+      font-size: var(--fs2);
       font-family: "Fira Code";
       color: #000000;
-
+      position: relative;
+      cursor: url(${CursorBlack}), auto;
       .rel {
         position: relative;
         display: block;
         width: 100%;
         margin: 1rem 0;
-
+        font-size: var(--fs4);
         &:hover {
           &::after {
             //rotate the asterik on hover
@@ -49,15 +64,14 @@ export const FirstFoldContainer = styled.div`
           width: 60%;
         }
       }
-
       .relative {
         position: relative;
         display: inline-block;
         margin: 0 1.5rem;
         img {
           position: absolute;
-          left: 0;
-          top: -85px;
+          bottom: -30px;
+          left: 0px;
           width: 100%;
         }
       }
@@ -86,7 +100,8 @@ export const FirstFoldContainer = styled.div`
   }
 `;
 
-export const FirstFold = styled.div``;
+export const FirstFold = styled.div`
+`;
 const flightAnimation = keyframes`
   0% {
     transform: translateX(0);

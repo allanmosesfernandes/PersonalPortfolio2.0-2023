@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import customCursor from "../assets/images/home/icons8-cursor.svg";
+import blackCursor from "../assets/images/home/cursorblack.svg";
 import PPMoriRegular from "../assets/fonts/PPMori-Regular.otf";
 import Grid from "../assets/images/home/grid.svg";
 
@@ -9,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
   --base-black:  #192227;
   --base-orange: #F9A600;
     font-size: 10px;
+    --fs4: 4rem;
+    --fs3: 3rem; 
+    --fs2: 2rem;
+    --fs1: 1rem;
+    --fs0: 0.5rem;
 }
 *,
 *:before,
@@ -18,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
 html {
   cursor: url(${customCursor}), auto;
 }
+
+#blackCursor {
+  cursor: url(${blackCursor}), auto !important;
+}
+
+
 body {
     background-color: var(--base-black);
     background-size: cover;
@@ -35,6 +47,7 @@ body {
       transform: scaleY(var(--zero));
       transform-origin: 0 0;
       z-index: 1;
+      pointer-events: none;
     }
 
     
