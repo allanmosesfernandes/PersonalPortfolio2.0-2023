@@ -100,12 +100,8 @@ export const StyledNavbar = styled.nav`
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
   background: rgb(0 0 0);
-  border: 2px solid var(--base-orange);
-  &:hover {
-    background: rgb(0 0 0 / 23%);
-  }
-  border-radius: 50px;
-  margin: 3rem;
+  border-bottom: 2px solid var(--base-orange);
+  margin-bottom: 3rem;
   h2 {
     font-weight: 500;
     font-size: 2.5rem;
