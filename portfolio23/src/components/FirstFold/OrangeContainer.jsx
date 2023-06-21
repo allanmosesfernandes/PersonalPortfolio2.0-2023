@@ -8,11 +8,12 @@ import primaryButton from '../../assets/images/home/primaryButton.svg';
 
 const StyledOrangeContainer = styled.div`
   display: flex;
+  gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
   font-family: "Fira Code", monospace;
-  font-size: var(--fs3)
+  font-size: var(--fs3);
 `;
 
 const StyledOrangeLeft = styled.div`
@@ -38,11 +39,36 @@ const StyledOrangeLeft = styled.div`
 const StyledOrangeRight = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
-
-img {
-    width: 30px;
-}
+  color: #000000;
+  background-color: var(--base-orange);
+  border-radius: 10px;
+  font-weight: 500;
+  // on hover extend the button
+  &:hover {
+    .buttonCircle {
+      /* transform: scale(1.01) rotate(320deg); */
+      transform: scale(1.2) rotate(320deg);
+    }
+  }
+  .buttonCircle {
+    width: 4rem;
+    height: 4rem;
+    right: 0rem;
+    position: relative;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    img {
+      width: 30px;
+      object-fit: contain;
+    }
+  }
 `;
 function OrangeContainer() {
   return (
@@ -78,7 +104,9 @@ function OrangeContainer() {
       </StyledOrangeLeft>
       <StyledOrangeRight>
         <Link to="/projects">All Projects</Link>
-        <img src={primaryButton} alt="primaryButton" />
+        <div className="buttonCircle">
+          <img src={primaryButton} alt="primaryButton" />
+        </div>
       </StyledOrangeRight>
     </StyledOrangeContainer>
   );
