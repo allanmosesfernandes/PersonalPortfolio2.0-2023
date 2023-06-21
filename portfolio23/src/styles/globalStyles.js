@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 :root {
   --base-black:  #192227;
   --base-orange: #F9A600;
+  --base-gray: #4B5563;
     font-size: 10px;
     --fs4: 4rem;
     --fs3: 3rem; 
