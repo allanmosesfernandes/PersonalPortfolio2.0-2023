@@ -3,7 +3,7 @@ import Grainy from "../../assets/images/home/bg-grain.png";
 import Asterik from "../../assets/images/home/asterik.svg";
 import CursorBlack from "../../assets/images/home/cursorblack.svg";
 import CursorWhite from "../../assets/images/home/icons8-cursor.svg";
-import code from "../../assets/images/home/code.png";
+import code2 from "../../assets/images/home/code2.png";
 
 const rotateAsterik = keyframes`
   0% {
@@ -16,7 +16,7 @@ const rotateAsterik = keyframes`
 
 const backgroundAnimation = keyframes`
 100% {
-  background-position: 1200px 1200px;
+  background-position: 0px 1000px;
 }
 `;
 
@@ -114,13 +114,12 @@ export const FirstFoldContainer = styled.div`
   }
   .firstFold__right {
     margin-left: auto;
-    border-radius: 60px;
+    border-radius: 10px;
     position: relative;
-    background-color: #89bfd9;
+    background-color: black;
     //==make it in the shape of an airplane window==//
     /* clip-path: ellipse(35% 50% at 50% 50%); */
     display: flex;
-    background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
@@ -132,11 +131,11 @@ export const FirstFoldContainer = styled.div`
       height: 100%;
       position: absolute;
       z-index: -1;
-      background-image: url(${code});
-      border-radius: 60px;
-      background-position: 0 0;
+      background-image: url(${code2});
+      border-radius: 10px;
+      background-position: 0;
       background-size: contain;
-      animation: ${backgroundAnimation} 10s linear infinite;
+      animation: ${backgroundAnimation} 30s linear infinite;
     }
 
     img {
