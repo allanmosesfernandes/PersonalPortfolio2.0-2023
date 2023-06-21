@@ -3,6 +3,7 @@ import customCursor from "../assets/images/home/icons8-cursor.svg";
 import blackCursor from "../assets/images/home/cursorblack.svg";
 import PPMoriRegular from "../assets/fonts/PPMori-Regular.otf";
 import Grid from "../assets/images/home/grid.svg";
+import Neue from "../assets/fonts/PPMori-Regular.otf";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -30,7 +31,18 @@ html {
   cursor: url(${blackCursor}), auto !important;
 }
 
+@font-face {
+  font-family: 'PPRegular';
+  src: url('../../static/fonts/PPNeueMachina/PPRegular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
+
+@font-face {
+    font-family: 'Machina';
+    src: url(${Neue}) format('opentype');
+}
 body {
     background-color: var(--base-black);
     background-size: cover;
@@ -52,13 +64,6 @@ body {
     }
 
     
-}
-
-@font-face {
-  font-family: 'PPMori-Regular', sans-serif;
-  src: url(${PPMoriRegular}) format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 button {
