@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
   --base-orange: #F9A600;
   --base-gray: #4B5563;
     font-size: 10px;
+    --fs5: 5rem;
     --fs4: 4rem;
     --fs3: 3rem; 
     --fs2: 2rem;
