@@ -51,6 +51,27 @@ export const SkillsContainer = styled.div`
       display: inline-block;
     }
   }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    .skills__title {
+        font-size: var(--fs2);
+
+        &:after {
+            display: none;
+        }
+        img {
+            width: 30px;
+        }
+    }
+    p {
+    font-size: 1.5rem;
+    width: 100%;
+
+        .ill {
+            display: none;
+        }
+    }
+  }
 `;
 
 export const Terminal = styled.div`
@@ -73,10 +94,22 @@ export const Terminal = styled.div`
   }
   .terminal__user {
     color: #4e9a06;
+    font-weight: bold;
     span {
       color: #c4a000;
     }
   }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    min-width: 0;
+    margin-left: 0;
+    width: 100%;
+    .terminal__user {
+        font-size: 1.2rem;
+        gap: 0.5rem;
+    }
+  }
+
 `;
 export const TechGrid = styled.div`
   display: grid;
@@ -102,10 +135,21 @@ export const TechGrid = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5rem;
+    width: 100%;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    .tech-grid__item {
+        p {
+            font-size: 1.2rem;
+        }
+    }
   }
   @media only screen and (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .terminal-panel {
     display: flex;
