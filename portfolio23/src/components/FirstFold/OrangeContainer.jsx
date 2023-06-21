@@ -15,6 +15,11 @@ const StyledOrangeContainer = styled.div`
   font-family: "Fira Code", monospace;
   font-size: var(--fs3);
   width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    flex-direction: column-reverse;
+  }
 `;
 
 const StyledOrangeLeft = styled.div`
@@ -34,6 +39,14 @@ const StyledOrangeLeft = styled.div`
   div:nth-child(2) {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
+  }
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    width: 100%;
+    svg {
+        width: 50px;
+        height: 50px;
+    }
   }
 `;
 
@@ -69,6 +82,11 @@ const StyledOrangeRight = styled.div`
       width: 30px;
       object-fit: contain;
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    padding: 2rem;
   }
 `;
 function OrangeContainer() {

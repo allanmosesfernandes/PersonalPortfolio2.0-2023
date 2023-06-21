@@ -25,6 +25,10 @@ export const Init = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    height: 100%;
+  }
 `;
 export const AsterikIcon = styled.img`
   position: absolute;
