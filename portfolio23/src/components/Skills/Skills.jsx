@@ -41,9 +41,13 @@ function Skills() {
           <img src={orange} alt="orange" />
           <img src={green} alt="green" />
         </div>
+        <p className="terminal__user">
+          allanfernandes@portfolio
+          <span>~</span>
+        </p>
         <TechGrid>
           <div className="tech-grid__item">
-            <img src={html} alt="HTML-5" />
+            <img src={html} alt="HTML-5" title="HTML5" />
             <p>HTML5</p>
           </div>
           <div className="tech-grid__item">

@@ -69,16 +69,24 @@ export const Terminal = styled.div`
   .terminal-window {
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
+  }
+  .terminal__user {
+    color: #4e9a06;
+    span {
+      color: #c4a000;
+    }
   }
 `;
 export const TechGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0;
+  width: 70%;
   margin: 2rem 0;
   img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .tech-grid__item {
     text-align: center;
