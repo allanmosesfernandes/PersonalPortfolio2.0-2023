@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from "react";
-import { FirstFoldContainer, FlightPath } from "./FirstFoldStyles";
+import { FirstFoldContainer, FlightPath, Init } from "./FirstFoldStyles";
 import nerd from "../../assets/images/home/nerd.png";
 import Flight from "../../assets/images/home/flight.svg";
 import Circle from "../../assets/images/home/circleSVG.svg";
@@ -9,7 +9,7 @@ import OrangeContainer from "./OrangeContainer";
 
 function FirstFold() {
   return (
-    <>
+    <Init>
       <FirstFoldContainer className="wrapper" id="blackCursor">
         <div className="firstFold__left">
           <FlightPath>
@@ -51,7 +51,7 @@ function FirstFold() {
         </div>
       </FirstFoldContainer>
       <OrangeContainer />
-    </>
+    </Init>
   );
 }
 

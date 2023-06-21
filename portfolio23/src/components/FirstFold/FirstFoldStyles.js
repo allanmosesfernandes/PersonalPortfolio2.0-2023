@@ -13,6 +13,12 @@ const rotateAsterik = keyframes`
   }
 `;
 
+export const Init = styled.div`
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 export const AsterikIcon = styled.img`
   position: absolute;
   right: 0;
@@ -29,6 +35,7 @@ export const FirstFoldContainer = styled.div`
   width: 100%;
   display: flex;
   padding: 2rem;
+  height: 100%;
   z-index: 2;
   @media only screen and (max-width: 768px) {
     //code goes here

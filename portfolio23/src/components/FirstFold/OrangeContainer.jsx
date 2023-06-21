@@ -14,6 +14,7 @@ const StyledOrangeContainer = styled.div`
   border-radius: 10px;
   font-family: "Fira Code", monospace;
   font-size: var(--fs3);
+  width: 100%;
 `;
 
 const StyledOrangeLeft = styled.div`
