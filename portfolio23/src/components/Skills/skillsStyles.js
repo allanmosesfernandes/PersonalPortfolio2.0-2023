@@ -51,12 +51,7 @@ export const SkillsContainer = styled.div`
   }
 `;
 
-export const TechGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  margin: 2rem 0;
-  margin-left: 10rem;
+export const Terminal = styled.div`
   border: 2px solid #121212;
   padding: 10px;
   padding-top: 5px;
@@ -64,6 +59,15 @@ export const TechGrid = styled.div`
   box-shadow: 4px 4px 0 #121217;
   max-width: 700px;
   min-height: 250px;
+  margin: 2rem 0;
+  
+`;
+export const TechGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-left: 10rem;
+  
   @media only screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
