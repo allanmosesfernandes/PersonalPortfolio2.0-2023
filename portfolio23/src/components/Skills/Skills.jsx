@@ -37,9 +37,9 @@ function Skills() {
 
       <Terminal>
         <div className="terminal-window">
-          <img src={red} alt="red" />
-          <img src={orange} alt="orange" />
-          <img src={green} alt="green" />
+          <img src={red} alt="red" title="close" />
+          <img src={orange} alt="orange" title="expand" />
+          <img src={green} alt="green" title="minimize" />
         </div>
         <p className="terminal__user">
           allanfernandes@portfolio
