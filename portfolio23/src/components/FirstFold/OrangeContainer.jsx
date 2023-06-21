@@ -95,16 +95,17 @@ function OrangeContainer() {
       <StyledOrangeLeft>
         <div>
           <a
-            href="https://www.linkedin.com/in/rohan-raj-9b1b3b1b0/"
+            href="https://github.com/allanmosesfernandes"
             target="_blank"
             rel="noopener noreferrer"
+            title="Github Profile"
           >
             <AiFillGithub size={70} />
           </a>
         </div>
         <div>
           <a
-            href="https://www.linkedin.com/in/rohan-raj-9b1b3b1b0/"
+            href="https://www.linkedin.com/in/allanmosesfernandes/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -113,7 +114,7 @@ function OrangeContainer() {
         </div>
         <div>
           <a
-            href="https://www.linkedin.com/in/rohan-raj-9b1b3b1b0/"
+            href="mailto:fernzallan14@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
