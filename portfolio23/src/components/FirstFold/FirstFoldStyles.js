@@ -28,6 +28,7 @@ export const Init = styled.div`
   @media only screen and (max-width: 768px) {
     //code goes here
     height: 100%;
+    margin: 0 1rem;
   }
 `;
 export const AsterikIcon = styled.img`
@@ -51,6 +52,8 @@ export const FirstFoldContainer = styled.div`
   @media only screen and (max-width: 768px) {
     //code goes here
     flex-direction: column;
+    z-index: -1;
+
     .firstFold__left {
       width: 100% !important;
     }
@@ -92,6 +95,13 @@ export const FirstFoldContainer = styled.div`
           left: 0px;
           width: 100%;
         }
+
+        @media only screen and (max-width: 768px) {
+          //code goes here
+          img {
+            bottom: -20px;
+          }
+        }
       }
 
       .apple__emojis {
@@ -103,13 +113,16 @@ export const FirstFoldContainer = styled.div`
 
       .body-copy {
         font-size: var(--fs1-5);
+        text-align: center;
+
         .rel {
           font-size: var(--fs2);
           font-weight: bold;
+          text-align: center;
 
           img {
-            left: -15px;
-            top: -13px;
+            left: 30px;
+            top: -16px;
             width: 80%;
           }
         }
@@ -195,7 +208,6 @@ export const FlightPath = styled.div`
     //code goes here
     width: 100%;
     font-size: 1.4rem;
-
     .flight-path__line {
       img {
         width: 20px;
