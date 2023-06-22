@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Marquee from 'react-fast-marquee';
 import {
-  ProjectSingle,
   ProjectsContainer,
   ProjectsWrapper,
 } from "./styledProjects";

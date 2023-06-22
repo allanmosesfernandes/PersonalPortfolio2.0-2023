@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledButton = styled.button`
-  background-color: var(--base-orange);
-  color: var(--base-black);
-  width: 100%;
-  padding: 1rem 6rem;
-  border-radius: 30px;
-  font-weight: 500;
-`;
+// const StyledButton = styled.button`
+//   background-color: var(--base-orange);
+//   color: var(--base-black);
+//   width: 100%;
+//   padding: 1rem 6rem;
+//   border-radius: 30px;
+//   font-weight: 500;
+// `;
 const GradientButton = styled.button`
   background-color: var(--base-orange);
   color: var(--base-black);

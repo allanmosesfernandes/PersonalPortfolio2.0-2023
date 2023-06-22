@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'gatsby';
-import { MenuToggle, StyledHamburger, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
+import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
 
 function Navbar() {
@@ -31,7 +31,7 @@ function Navbar() {
       {isMobile ? (
         <>
           <Link to="/">
-            <h2></h2>
+            <h2>Allan</h2>
           </Link>
           {showHamburger && (
             <MenuToggle onClick={toggleHamburgerMenu}>

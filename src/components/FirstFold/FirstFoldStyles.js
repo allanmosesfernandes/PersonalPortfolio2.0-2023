@@ -1,18 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
-import Asterik from "../../assets/images/home/asterik.svg";
 import CursorBlack from "../../assets/images/home/cursorblack.svg";
-import CursorWhite from "../../assets/images/home/icons8-cursor.svg";
 import code2 from "../../assets/images/home/code2.png";
-
-const rotateAsterik = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-`;
 
 const backgroundAnimation = keyframes`
 100% {

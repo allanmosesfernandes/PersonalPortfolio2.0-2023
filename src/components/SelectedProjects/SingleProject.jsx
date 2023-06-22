@@ -27,8 +27,6 @@ function SingleProject(props) {
   const {
     ProjectUrl,
     ProjectTitle,
-    onMouseEnter,
-    onMouseLeave,
     ProjectDescription,
     ProjectImage,
   } = props;
