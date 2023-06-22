@@ -1,8 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import Marquee from 'react-fast-marquee';
-import { ProjectSingle, ProjectsContainer, ProjectsWrapper } from './styledProjects';
+import {
+  ProjectSingle,
+  ProjectsContainer,
+  ProjectsWrapper,
+} from "./styledProjects";
 import DailyStoic from "../../../src/assets/images/project-images/daily-stoic.png";
+import SingleProject from './SingleProject';
 
 function Projects() {
   const [blinky, setBlinky] = useState(false);
@@ -12,6 +17,15 @@ function Projects() {
       <div className="projects__title">Some Projects</div>
       <ProjectsWrapper>
         {/* On hover of Div set state to true  */}
+        {/* Convert below to a component */}
+        <SingleProject
+          ProjectUrl="https://dailystoicreminders.uk/"
+          ProjectTitle="Daily Stoic Reminders"
+          onMouseEnter={() => setBlinky(true)}
+          onMouseLeave={() => setBlinky(false)}
+          ProjectImage={DailyStoic}
+          ProjectDescription="Wesbite design & development."
+        />
         <ProjectSingle
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
@@ -23,12 +37,8 @@ function Projects() {
             rel="noopener noreferrer"
           >
             <div className="block__one">
-              <p className="block_title">
-                Daily Stoic Reminders
-              </p>
-              <p>
-                Wesbite design & development.
-              </p>
+              <p className="block_title">Daily Stoic Reminders</p>
+              <p>Wesbite design & development.</p>
             </div>
             <div className="block__two">
               <img src={DailyStoic} alt="Daily Stoic" />
