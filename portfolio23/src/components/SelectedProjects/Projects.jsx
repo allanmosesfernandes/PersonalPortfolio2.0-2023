@@ -18,7 +18,7 @@ function Projects() {
         >
           {/* Rest of the code */}
           <a
-            href="https://www.example.com"
+            href="https://dailystoicreminders.uk/"
             target="_blank"
             rel="noopener noreferrer"
           >
