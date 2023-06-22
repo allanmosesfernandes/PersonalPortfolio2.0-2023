@@ -23,9 +23,11 @@ function Projects() {
             rel="noopener noreferrer"
           >
             <div className="block__one">
+              <p className="block_title">
+                Daily Stoic Reminders
+              </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus,
-                necessitatibus?
+                Wesbite design & development.
               </p>
             </div>
             <div className="block__two">

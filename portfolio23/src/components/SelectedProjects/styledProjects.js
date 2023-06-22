@@ -32,6 +32,11 @@ export const ProjectSingle = styled.div`
     display: flex;
     align-items: center;
   }
+  .block__one {
+    .block_title {
+        font-style: italic;
+    }
+  }
   //target 2nd div in grid
   .block__two {
     border-left: 1px solid var(--base-gray);
