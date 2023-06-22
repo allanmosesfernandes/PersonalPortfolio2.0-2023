@@ -17,6 +17,9 @@ export const SpotifyCompWrapper = styled.div`
     -webkit-transform-origin: center center;
     transform-origin: center center;
   }
+  .sounds__svg {
+    width: 100%;
+  }
 `;
 
 export const SpotifyIntro = styled.div`
@@ -28,13 +31,15 @@ export const SpotifyIntro = styled.div`
   padding: 2rem;
   img {
     width: 25px;
+    top: 5px;
+    position: relative;
   }
   .intro__left {
-    width: 40%;
+    width: 60%;
     padding: 2rem;
   }
   .intro__right {
-    width: 60%;
+    width: 40%;
     iframe {
       border-radius: 12px;
       width: 100%;
@@ -42,4 +47,15 @@ export const SpotifyIntro = styled.div`
       box-shadow: 5px 5px 1px 0px rgba(156, 144, 156, 1);
     }
   }
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    flex-direction: column;
+    .intro__left {
+      width: 100%;
+    }
+    .intro__right {
+      width: 100%;
+    }
+  }
+
 `;

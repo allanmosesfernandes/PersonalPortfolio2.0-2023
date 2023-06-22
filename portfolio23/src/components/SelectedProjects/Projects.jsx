@@ -7,7 +7,7 @@ import {
   ProjectsWrapper,
 } from "./styledProjects";
 import DailyStoic from "../../../src/assets/images/project-images/daily-stoic.png";
-import ankan from "../../../src/assets/images/project-images/ankan.png";
+import ankan from "../../../src/assets/images/project-images/ankan.webp";
 import apex from "../../../src/assets/images/project-images/apex-academy.png";
 import trent from "../../../src/assets/images/project-images/trent.png";
 import SingleProject from './SingleProject';
@@ -33,7 +33,7 @@ function Projects() {
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
           ProjectImage={ankan}
-          ProjectDescription="Website design & development for @ankanchittalipi, using wordpress as a headless CMS with a react frontend"
+          ProjectDescription="Website design & development for @ankanchittalipi, using wordpress as a headless CMS with a react frontend."
         />
         <SingleProject
           ProjectUrl="http://trentfreshers.org/"
@@ -41,7 +41,7 @@ function Projects() {
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
           ProjectImage={trent}
-          ProjectDescription="Website design development for @trentsu using wordpress"
+          ProjectDescription="Website design development for @trentsu using wordpress."
         />
         <SingleProject
           ProjectUrl="https://apexlearningacademy.co.in/"
@@ -49,7 +49,7 @@ function Projects() {
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
           ProjectImage={apex}
-          ProjectDescription="Website design & development for @apexacademy using React"
+          ProjectDescription="Website design & development for @apexacademy using React."
         />
       </ProjectsWrapper>
     </ProjectsContainer>

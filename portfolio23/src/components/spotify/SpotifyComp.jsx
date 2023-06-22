@@ -7,7 +7,9 @@ import radio from "./radio.png";
 function SpotifyComp() {
   return (
     <SpotifyCompWrapper className="wrapper">
-      <SvgComponent />
+      <div className="sounds__svg">
+        <SvgComponent />
+      </div>
       <SpotifyIntro>
         <div className="intro__left">
           <p>

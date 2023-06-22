@@ -127,6 +127,7 @@ export const FirstFoldContainer = styled.div`
           }
         }
       }
+
     }
   }
   .firstFold__right {
@@ -143,6 +144,10 @@ export const FirstFoldContainer = styled.div`
     align-items: center;
     z-index: 99;
     padding: 2rem;
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      margin: auto;
+    }
     .window-pane {
       width: 100%;
       height: 100%;
