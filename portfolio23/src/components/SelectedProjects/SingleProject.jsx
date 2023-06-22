@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { ProjectSingle } from "./styledProjects";
 import Marquee from 'react-fast-marquee';
 
 function SingleProject(props) {
   const [blinky, setBlinky] = useState(false);
+  // if screen width < 600 setBlinky to true
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setBlinky(true);
+      } else {
+        setBlinky(false);
+      }
+    };
+
+    handleResize(); // Call it initially
+
+    window.addEventListener("resize", handleResize); // Listen for window resize events
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Clean up the event listener
+    };
+  }, []);
+
   const {
     ProjectUrl,
     ProjectTitle,

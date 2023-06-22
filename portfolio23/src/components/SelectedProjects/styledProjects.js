@@ -16,18 +16,35 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    //target every even div child
-    div:nth-child(even) a{
-        flex-direction: row-reverse;
+  display: flex;
+  flex-direction: column;
+  //target every even div child
+  div:nth-child(even) a {
+    flex-direction: row-reverse;
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    div:nth-child(even) a {
+      flex-direction: column;
     }
+  }
 `;
 
 export const ProjectSingle = styled.div`
   a {
     display: flex;
     cursor: url(${MegaCursor}), auto;
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    a {
+      flex-direction: column;
+    }
+    .block__one {
+      .block_title {
+        font-size: var(--fs2);
+      }
+    }
   }
   border-bottom: 2px solid var(--base-gray);
   font-size: 1.5rem;
@@ -63,5 +80,23 @@ export const ProjectSingle = styled.div`
     font-size: var(--fs5);
     font-style: italic;
     display: flex;
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    .block__two {
+      border: none;
+      min-width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      img {
+        padding: 0rem;
+        object-position: top;
+        object-fit: cover;
+      }
+    }
+    .block__three {
+      font-size: var(--fs3);
+    }
   }
 `;
