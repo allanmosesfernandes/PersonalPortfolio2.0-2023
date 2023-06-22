@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect } from "react";
+import { useState } from "react";
 import { ProjectSingle } from "./styledProjects";
-import Marquee from 'react-fast-marquee';
+import Marquee from "react-fast-marquee";
 
 function SingleProject(props) {
   const [blinky, setBlinky] = useState(false);
