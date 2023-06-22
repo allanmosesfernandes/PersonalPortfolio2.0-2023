@@ -17,6 +17,7 @@ module.exports = {
         displayName: true,
       },
     },
+
     {
       resolve: "gatsby-omni-font-loader",
       options: {

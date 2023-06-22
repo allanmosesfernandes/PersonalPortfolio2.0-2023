@@ -19,7 +19,9 @@ const GlobalStyle = createGlobalStyle`
     --fs1: 1rem;
     --fs1-5: 1.5rem;
     --fs0: 0.5rem;
+    --red-orange: #fff;
 }
+
 *,
 *:before,
 *:after {

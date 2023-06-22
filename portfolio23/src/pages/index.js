@@ -4,6 +4,7 @@ import 'normalize.css';
 import FirstFold from '../components/FirstFold/FirstFold';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/SelectedProjects/Projects';
+import SpotifyComp from '../assets/images/spotify/SpotifyComp';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <FirstFold />
       <Skills />
       <Projects />
+      <SpotifyComp />
     </>
   );
 }
