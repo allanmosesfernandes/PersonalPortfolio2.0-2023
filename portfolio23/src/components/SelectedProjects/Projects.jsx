@@ -15,22 +15,24 @@ function Projects() {
   return (
     <ProjectsContainer className="wrapper">
       <div className="projects__title">Some Projects</div>
-      <SingleProject
-        ProjectUrl="https://dailystoicreminders.uk/"
-        ProjectTitle="Daily Stoic Reminders"
-        onMouseEnter={() => setBlinky(true)}
-        onMouseLeave={() => setBlinky(false)}
-        ProjectImage={DailyStoic}
-        ProjectDescription="Website design & development."
-      />
-      <SingleProject
-        ProjectUrl="https://dailystoicreminders.uk/"
-        ProjectTitle="Daily Stoic Reminders"
-        onMouseEnter={() => setBlinky(true)}
-        onMouseLeave={() => setBlinky(false)}
-        ProjectImage={DailyStoic}
-        ProjectDescription="Website design & development."
-      />
+      <ProjectsWrapper>
+        <SingleProject
+          ProjectUrl="https://dailystoicreminders.uk/"
+          ProjectTitle="Daily Stoic Reminders"
+          onMouseEnter={() => setBlinky(true)}
+          onMouseLeave={() => setBlinky(false)}
+          ProjectImage={DailyStoic}
+          ProjectDescription="Website design & development."
+        />
+        <SingleProject
+          ProjectUrl="https://ankanchittalipi.com/"
+          ProjectTitle="The Common Thread"
+          onMouseEnter={() => setBlinky(true)}
+          onMouseLeave={() => setBlinky(false)}
+          ProjectImage={DailyStoic}
+          ProjectDescription="Website design & development for @ankanchittalipi."
+        />
+      </ProjectsWrapper>
     </ProjectsContainer>
   );
 }
