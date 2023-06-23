@@ -27,27 +27,36 @@ const AboutMe = () => {
         </p>
         <p>
           I'm a front-end developer born in{" "}
-          <a href="">
+          <a href="https://www.tripadvisor.co.uk/Attractions-g297604-Activities-c61-t52-Goa.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="city__life goa">
               Goa
               <img src={Goa} alt="lorem" />
             </span>
           </a>
           raised in{" "}
-          <a href="">
+          <a href="https://www.tripadvisor.co.uk/Tourism-g304554-Mumbai_Maharashtra-Vacations.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="city__life bom">
               Mumbai
               <img src={auto} alt="lorem" />
             </span>
           </a>
-           currently in{" "}
-          <a href="">
+          currently in{" "}
+          <a href="https://www.visit-nottinghamshire.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span className="city__life notts">
               Nottingham
               <img src={united} alt="lorem" />
             </span>
           </a>
-pursuing my Masters in Computer Science from NTU.
+          pursuing my Masters in Computer Science from NTU.
         </p>
         <p>
           I also play football,{" "}
