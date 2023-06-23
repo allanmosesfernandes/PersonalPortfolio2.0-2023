@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutContainer, AboutLeft, AboutRight, Places } from "./about-styles";
+import { AboutContainer, AboutLeft, Places } from "./about-styles";
 import Typewriter from "typewriter-effect";
 import Goa from "../../assets/images/home/wave.png";
 import bow from "../../assets/images/home/bow.png";
@@ -10,7 +10,7 @@ import united from "../../assets/images/about/united.png";
 
 const AboutMe = () => {
   return (
-    <AboutContainer className="wrapper">
+    <AboutContainer className="">
       <AboutLeft>
         <img src={nerd} className="about__picture" />
         <p>Hey! I'm Allan.</p>

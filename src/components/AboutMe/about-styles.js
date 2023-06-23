@@ -1,21 +1,30 @@
 import styled from "styled-components";
 import squiggly from "../../assets/images/home/squiggly.svg";
+import Grainy from "../../assets/images/home/bg-grain-dark.png";
 
 export const AboutContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-family: 'Fira Code', monospace;
-    font-size: 1.5rem;
-    margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Fira Code", monospace;
+  font-size: 1.5rem;
+  background-color: #000;
+  background-image: url(${Grainy});
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 100vh;
 `;
 export const AboutLeft = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
   margin: 0 2rem;
+  width: 60%;
+
   a {
     border-bottom: 1px dashed var(--base-orange);
     letter-spacing: 0rem;
@@ -39,21 +48,6 @@ export const AboutLeft = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    img {
-      width: 30px;
-      height: 30px;
-      margin: auto 1rem;
-    }
-    &.goa {
-    }
-
-    &.bom {
-    }
-
-    &.notts {
-      img {
-      }
-    }
   }
   .about__picture {
     width: 100px;
