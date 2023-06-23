@@ -27,6 +27,7 @@ export const ContactMarquee = styled.div`
       margin: auto 2rem;
     }
   }
+  //Media Queries
 `;
 
 export const ContactInfo = styled.div`
@@ -36,26 +37,36 @@ export const ContactInfo = styled.div`
   margin: auto;
   width: 100%;
   color: white;
+
   .contact__icons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-  }`;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--base-gray);
+  }
+`;
 
 export const MegaEmail = styled.div`
-    color: rgba(255, 254, 244, 0.3);
-    font-size: var(--fs5);
-    text-align: center;
+  color: rgba(255, 254, 244, 0.3);
+  font-size: var(--fs5);
+  text-align: center;
+  border-bottom: 1px solid var(--base-gray);
+  padding: 2rem 0;
 `;
 
 export const EditorsNote = styled.div`
   margin: auto;
   justify-content: center;
   display: flex;
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: #64748b;
   text-align: center;
-  span {
+  width: 100%;
+  a {
     color: #94a3b8;
+    text-decoration: underline;
   }
 `;

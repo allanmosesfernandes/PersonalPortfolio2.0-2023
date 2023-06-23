@@ -1,14 +1,29 @@
 import React from "react";
-import { ContactInfo, ContactMarquee, EditorsNote, FooterContainer, MegaEmail } from "./footerStyles";
-import Marquee from "react-fast-marquee";
-import Star from "../../assets/images/footer/star.svg";
 import {
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
-import { BiLogoLinkedin } from "react-icons/bi";
+  ContactInfo,
+  ContactMarquee,
+  EditorsNote,
+  FooterContainer,
+  MegaEmail,
+} from "./footerStyles";
+import Marquee from "react-fast-marquee";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const footer = () => {
+import Star from "../../assets/images/footer/star.svg";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { useState } from "react";
+
+const Footer = () => {
+  const [copy, setCopy] = useState(false);
+  const copyEmail = "fernzallan14@gmail.com";
+  const handleCopy = () => {
+    setCopy(true);
+    //reset after 3 seconds
+    setTimeout(() => {
+      setCopy(false);
+    }, 9000);
+  };
   return (
     <FooterContainer className="wrapper">
       <ContactMarquee>
@@ -45,12 +60,58 @@ const footer = () => {
             <BiLogoLinkedin size={50} />
           </a>
         </div>
-        <MegaEmail>fernzallan14@gmail.com</MegaEmail>
+        <>
+          <MegaEmail title={copy ? "Copied" : "Click to copy"}>
+            <CopyToClipboard text={copyEmail} onCopy={handleCopy}>
+              <div>{copyEmail}</div>
+            </CopyToClipboard>
+          </MegaEmail>
+        </>
+
         <EditorsNote>
           <p>
-            <span>Figma </span> and <span>Visual Studio Code</span> joined forces
-            to create this website.<br />Built with <span>Gatsby </span>+{" "}
-            <span>Styled Components</span>, deployed on <span>Netlify</span>.
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Figma{" "}
+            </a>
+            &{" "}
+            <a
+              href="https://code.visualstudio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visual Studio Code{" "}
+            </a>{" "}
+             were my trusty sidekicks in creating this website.
+            <br />
+            <a
+              href="https://www.gatsbyjs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://www.styled-components.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Styled Components
+            </a>{" "}
+            were my weapons of choice.
+            <br />
+            <a
+              href="https://www.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Netlify
+            </a>{" "}
+            was my trusty deploy soldier. <br />
           </p>
         </EditorsNote>
       </ContactInfo>
@@ -58,4 +119,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
