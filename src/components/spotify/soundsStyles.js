@@ -49,6 +49,8 @@ export const SpotifyIntro = styled.div`
   }
   @media only screen and (max-width: 768px) {
     //code goes here
+    padding: 0.5rem;
+    font-size: 1.2rem;
     flex-direction: column;
     .intro__left {
       width: 100%;
