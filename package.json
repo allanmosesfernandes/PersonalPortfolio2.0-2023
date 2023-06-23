@@ -27,7 +27,8 @@
     "react-fast-marquee": "^1.6.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "typewriter-effect": "^2.20.1"
   },
   "repository": {
     "type": "git",
