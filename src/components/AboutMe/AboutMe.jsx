@@ -27,39 +27,41 @@ const AboutMe = () => {
         </p>
         <p>
           I'm a front-end developer born in{" "}
-          <a href="https://www.tripadvisor.co.uk/Attractions-g297604-Activities-c61-t52-Goa.html"
+          <a
+            href="https://www.tripadvisor.co.uk/Attractions-g297604-Activities-c61-t52-Goa.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="city__life goa">
-              Goa
-              <img src={Goa} alt="lorem" />
-            </span>
+            {" "}
+            Goa
           </a>
+          {/* <span className="city__life goa">
+            <img src={Goa} alt="lorem" />
+          </span> */}{" "}
           raised in{" "}
-          <a href="https://www.tripadvisor.co.uk/Tourism-g304554-Mumbai_Maharashtra-Vacations.html"
+          <a
+            href="https://www.tripadvisor.co.uk/Tourism-g304554-Mumbai_Maharashtra-Vacations.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="city__life bom">
-              Mumbai
-              <img src={auto} alt="lorem" />
-            </span>
+            Mumbai{" "}
           </a>
+          {/* <span className="city__life bom">
+            <img src={auto} alt="lorem" />
+          </span> */}
           currently in{" "}
-          <a href="https://www.visit-nottinghamshire.co.uk/"
+          <a
+            href="https://www.visit-nottinghamshire.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="city__life notts">
-              Nottingham
-              <img src={united} alt="lorem" />
-            </span>
-          </a>
-          pursuing my Masters in Computer Science from NTU.
-        </p>
-        <p>
-          I also play football,{" "}
+            Nottingham
+          </a>{" "}
+          {/* <span className="city__life notts">
+            <img src={united} alt="lorem" />
+          </span> */}
+          pursuing my Masters in Computer Science from NTU. I also play
+          football,{" "}
           <a
             href="https://youtu.be/1IKM0uO5Stc"
             target="_blank"

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import Goa from "../../assets/images/home/wave.png";
-import bow from "../../assets/images/home/bow.png";
-import auto from "../../assets/images/home/auto.png";
+import squiggly from "../../assets/images/home/squiggly.svg";
 
 export const AboutContainer = styled.div`
     display: flex;
@@ -10,7 +8,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     margin: 0 auto;
     font-family: 'Fira Code', monospace;
-    font-size: var(--fs2);
+    font-size: 1.5rem;
     margin-top: 10rem;
 `;
 export const AboutLeft = styled.div`
@@ -19,27 +17,37 @@ export const AboutLeft = styled.div`
   width: 60%;
   margin: 0 2rem;
   a {
-    text-decoration: underline;
+    border-bottom: 1px dashed var(--base-orange);
     letter-spacing: 0rem;
+    position: relative;
+    background-position-y: bottom;
+    &:hover {
+      color: white;
+      background-image: url(${squiggly});
+      background-size: auto 6px;
+      background-repeat: repeat-x;
+      text-decoration: none;
+      border-bottom: none;
+      transition: all 0.2s ease-in-out;
+    }
   }
   p {
     margin: 1rem 0;
-    line-height: 2;
+    line-height: 1.5;
   }
   .city__life {
-    text-decoration: underline;
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     img {
-        width: 30px;
-        height: 30px;
-        margin: 0 1rem;
+      width: 30px;
+      height: 30px;
+      margin: auto 1rem;
     }
     &.goa {
-
     }
 
     &.bom {
-      
     }
 
     &.notts {
@@ -61,6 +69,7 @@ export const AboutLeft = styled.div`
 
   .type {
     display: flex;
+    margin-bottom: -10px;
   }
   @media screen and (max-width: 768px) {
     width: 100%;
