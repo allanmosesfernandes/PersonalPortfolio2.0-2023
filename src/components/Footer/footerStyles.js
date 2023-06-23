@@ -33,12 +33,29 @@ export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
+  width: 100%;
   color: white;
   .contact__icons {
     display: flex;
-  }
-  .mega__email {
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }`;
+
+export const MegaEmail = styled.div`
     color: rgba(255, 254, 244, 0.3);
-    font-size: var(--fs4);
+    font-size: var(--fs5);
+    text-align: center;
+`;
+
+export const EditorsNote = styled.div`
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  color: #64748b;
+  text-align: center;
+  span {
+    color: #94a3b8;
   }
 `;
