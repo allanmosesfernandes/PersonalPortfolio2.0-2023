@@ -22,7 +22,7 @@ function SpotifyComp() {
             <br />
             2) House Music{" "}
             <span>
-              <img src={radio} alt="Coffee" />
+              <img src={radio} alt="Radio" />
             </span>
           </p>
           <p>
@@ -33,9 +33,17 @@ function SpotifyComp() {
             productive.
           </p>
           <p>
-            Together, coffee and music make the perfect coding duo. I hope you
-            enjoy my Spotify coding playlist! And if you have any suggestions
-            for other tracks that I should add, please let me know.
+            Together,{" "}
+            <span>
+              <img src={coffee} alt="Coffee" />
+            </span>{" "}
+            and{" "}
+            <span>
+              <img src={radio} alt="Radio" />
+            </span>{" "}
+            make the perfect coding duo. I hope you enjoy my coding
+            playlist! And if you have any suggestions for other tracks that I
+            could add, let me know. 
           </p>
         </div>
         <div className="intro__right">

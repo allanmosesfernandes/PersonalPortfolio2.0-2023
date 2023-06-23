@@ -25,8 +25,10 @@ export const SpotifyCompWrapper = styled.div`
 export const SpotifyIntro = styled.div`
   display: flex;
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
   font-family: "Fira Code", monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   padding: 2rem;
   img {

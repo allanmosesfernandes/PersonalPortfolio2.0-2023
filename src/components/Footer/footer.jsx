@@ -61,7 +61,7 @@ const Footer = () => {
           </a>
         </div>
         <>
-          <MegaEmail title={copy ? "Copied" : "Click to copy"}>
+          <MegaEmail title={copy ? "Copied!" : "Click to copy"}>
             <CopyToClipboard text={copyEmail} onCopy={handleCopy}>
               <div>{copyEmail}</div>
             </CopyToClipboard>
