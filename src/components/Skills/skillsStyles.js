@@ -94,7 +94,6 @@ export const Terminal = styled.div`
   }
   .terminal__user {
     color: #4e9a06;
-    font-weight: bold;
     span {
       color: #c4a000;
     }
