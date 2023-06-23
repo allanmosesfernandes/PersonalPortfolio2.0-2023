@@ -7,6 +7,11 @@ export const FooterContainer = styled.footer`
   align-items: center;
   width: 100%;
   font-family: "Fira Code", monospace;
+  margin-top: 10rem;
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    margin-top: 5rem;
+  }
 `;
 
 export const ContactMarquee = styled.div`
@@ -28,6 +33,19 @@ export const ContactMarquee = styled.div`
     }
   }
   //Media Queries
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    font-size: 6rem;
+    p {
+      img {
+        width: 30px;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    font-size: var(--fs4);
+  }
 `;
 
 export const ContactInfo = styled.div`
@@ -37,7 +55,6 @@ export const ContactInfo = styled.div`
   margin: auto;
   width: 100%;
   color: white;
-
   .contact__icons {
     display: flex;
     justify-content: center;
@@ -54,6 +71,10 @@ export const MegaEmail = styled.div`
   text-align: center;
   border-bottom: 1px solid var(--base-gray);
   padding: 2rem 0;
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    font-size: var(--fs2);
+  }
 `;
 
 export const EditorsNote = styled.div`
@@ -68,5 +89,9 @@ export const EditorsNote = styled.div`
   a {
     color: #94a3b8;
     text-decoration: underline;
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    padding: 1rem;
   }
 `;
