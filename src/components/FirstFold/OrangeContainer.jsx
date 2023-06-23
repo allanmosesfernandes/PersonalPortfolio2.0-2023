@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { AiFillGithub } from 'react-icons/ai';
+import React from "react";
+import styled from "styled-components";
+import { AiFillGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
-import { MdAlternateEmail } from "react-icons/md";
-import { Link } from 'gatsby';
-import primaryButton from '../../assets/images/home/primaryButton.svg';
+import { SiGmail } from "react-icons/si";
+import { Link } from "gatsby";
+import primaryButton from "../../assets/images/home/primaryButton.svg";
 
 const StyledOrangeContainer = styled.div`
   display: flex;
@@ -44,8 +44,8 @@ const StyledOrangeLeft = styled.div`
     //code goes here
     width: 100%;
     svg {
-        width: 50px;
-        height: 50px;
+      width: 50px;
+      height: 50px;
     }
   }
 `;
@@ -118,7 +118,7 @@ function OrangeContainer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MdAlternateEmail size={70} />
+            <SiGmail size={70} />
           </a>
         </div>
       </StyledOrangeLeft>

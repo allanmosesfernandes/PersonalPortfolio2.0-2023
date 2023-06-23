@@ -2,15 +2,15 @@ import styled, { keyframes } from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
 import CursorBlack from "../../assets/images/home/cursorblack.svg";
 import code2 from "../../assets/images/home/code2.png";
+import code1 from "../../assets/images/home/code1.png";
 
 const backgroundAnimation = keyframes`
 100% {
-  background-position: 0px 1000px;
+  background-position: 1000px 1000px;
 }
 `;
 
 export const Init = styled.div`
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,6 +38,8 @@ export const FirstFoldContainer = styled.div`
   padding: 2rem;
   height: 100%;
   z-index: 2;
+  height: 70vh;
+
   @media only screen and (max-width: 768px) {
     //code goes here
     flex-direction: column;
@@ -116,7 +118,6 @@ export const FirstFoldContainer = styled.div`
           }
         }
       }
-
     }
   }
   .firstFold__right {
@@ -142,10 +143,10 @@ export const FirstFoldContainer = styled.div`
       height: 100%;
       position: absolute;
       z-index: -1;
-      background-image: url(${code2});
+      background-image: url(${code1});
       border-radius: 10px;
       background-position: 0;
-      background-size: contain;
+      background-size: 200%;
       animation: ${backgroundAnimation} 30s linear infinite;
     }
 

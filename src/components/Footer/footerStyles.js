@@ -5,6 +5,8 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  z-index: 1000;
   width: 100%;
   font-family: "Fira Code", monospace;
   margin-top: 10rem;
@@ -15,7 +17,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const ContactMarquee = styled.div`
-  font-size: 15rem;
+  font-size: 10rem;
   width: 100%;
   text-transform: uppercase;
   display: flex;
@@ -35,7 +37,7 @@ export const ContactMarquee = styled.div`
   //Media Queries
   @media only screen and (max-width: 768px) {
     //code goes here
-    font-size: 6rem;
+    font-size: 4rem;
     p {
       img {
         width: 30px;
@@ -67,7 +69,7 @@ export const ContactInfo = styled.div`
 
 export const MegaEmail = styled.div`
   color: rgba(255, 254, 244, 0.3);
-  font-size: var(--fs5);
+  font-size: var(--fs4);
   text-align: center;
   border-bottom: 1px solid var(--base-gray);
   padding: 2rem 0;

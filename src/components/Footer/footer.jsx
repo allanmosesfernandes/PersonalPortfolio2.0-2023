@@ -25,12 +25,12 @@ const Footer = () => {
     }, 9000);
   };
   return (
-    <FooterContainer className="wrapper">
+    <FooterContainer>
       <ContactMarquee>
         <Marquee>
           {Array.from({ length: 5 }).map((_, i) => (
             <p className="contact" key={i}>
-              <span>Contacts</span>
+              <span>GET IN TOUCH</span>
               <img src={Star} alt="star" key={i} />
             </p>
           ))}

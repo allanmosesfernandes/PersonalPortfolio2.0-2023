@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import MegaCursor from "../../assets/images/project-images/mega-cursor.svg";
+import Grainy from "../../assets/images/home/bg-grain-dark.png";
 
 export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Fira Code", monospace;
-
   .projects__title {
     font-size: var(--fs4);
     margin: 3rem 0 0 0;
