@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
+import plus from "../../assets/images/alt/plus.svg";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,12 +37,21 @@ function Navbar() {
           {showHamburger && (
             <MenuToggle onClick={toggleHamburgerMenu}>
               <div className={toggleHamburger ? "hamBox hamBoxOpen" : "hamBox"}>
-                <span
+                <img
+                  className={
+                    toggleHamburger
+                      ? "hamburger__icon spin"
+                      : "hamburger__icon"
+                  }
+                  src={plus}
+                  alt="plus"
+                />
+                {/* <span
                   className={toggleHamburger ? "lineTop spin" : "lineTop"}
                 />
                 <span
                   className={toggleHamburger ? "lineBottom spin" : "lineBottom"}
-                />
+                /> */}
               </div>
             </MenuToggle>
           )}
@@ -75,7 +85,7 @@ function Navbar() {
               onClick={toggleHamburgerMenu}
               style={{
                 top: toggleHamburger ? "0" : "120px",
-                transitionDelay: toggleHamburger ? "0.8s" : "0s" 
+                transitionDelay: toggleHamburger ? "0.8s" : "0s",
               }}
             >
               Home

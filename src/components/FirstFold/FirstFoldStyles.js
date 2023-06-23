@@ -44,7 +44,7 @@ export const FirstFoldContainer = styled.div`
     //code goes here
     flex-direction: column;
     z-index: -1;
-
+    height: 100%;
     .firstFold__left {
       width: 100% !important;
     }

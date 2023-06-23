@@ -24,29 +24,34 @@ const blinkAnimation = keyframes`
 `;
 
 export const MenuToggle = styled.div`
-cursor: pointer;
-
-.hamBox {
-  position: relative;
-  z-index: 2;
-  width: 44px;
-  height: 44px;
   cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-  padding: 2.4em;
-  &:hover {
-    background: #2a2a2f;
+
+  .hamBox {
+    position: relative;
+    z-index: 2;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    padding: 0;
+    margin: 0 2rem;
+    .hamburger__icon {
+      width: 30px;
+      animation: none;
+      transition: all 0.5s ease-in-out;
+
+      &.spin {
+        transform: rotate(135deg);
+      }
+    }
   }
 
-}
+  .hamBoxOpen {
+    position: relative;
+  }
 
-.hamBoxOpen {
-  background: #2a2a2f;
-  position: relative;
-}
-
-.lineTop, .lineBottom {
+  /* .lineTop, .lineBottom {
   margin: 0 auto;
   position: absolute;
   display: block;
@@ -57,9 +62,9 @@ cursor: pointer;
   right: 0; 
   transform: rotate(0deg); 
   transition: all 0.5s ease-in-out;
-}
+} */
 
-.lineTop {
+  /* .lineTop {
   top: 2.2em;
 
   &.spin {
@@ -76,7 +81,7 @@ cursor: pointer;
     background: #fff;
     bottom: 2.35em;
   }
-}
+} */
 `;
 // Apply the animation to the image
 export const StyledNavbar = styled.nav`
