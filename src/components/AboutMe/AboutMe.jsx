@@ -1,12 +1,9 @@
 import React from "react";
 import { AboutContainer, AboutLeft, Places } from "./about-styles";
 import Typewriter from "typewriter-effect";
-import Goa from "../../assets/images/home/wave.png";
-import bow from "../../assets/images/home/bow.png";
-import auto from "../../assets/images/home/auto.png";
 import nerd from "../../assets/images/home/nerd.png";
 import Arrow from "../../assets/images/about/arrow.svg";
-import united from "../../assets/images/about/united.png";
+import DMG from "../../assets/images/about/orgs/dmg.svg";
 
 const AboutMe = () => {
   return (
@@ -60,7 +57,7 @@ const AboutMe = () => {
           {/* <span className="city__life notts">
             <img src={united} alt="lorem" />
           </span> */}
-          pursuing my Masters in Computer Science from NTU. I also play
+          pursuing my Masters in Computer Science from NTU.<br />Currently on my placement year at <a href="https://www.trentstudents.org/">NTSU</a>.<br /> I also play
           football,{" "}
           <a
             href="https://youtu.be/1IKM0uO5Stc"
@@ -74,7 +71,10 @@ const AboutMe = () => {
         <Places>
           <h3>I've worked for</h3>
           <div className="workplaces">
-            
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
+            <img src="" alt="" />
           </div>
         </Places>
       </AboutLeft>
