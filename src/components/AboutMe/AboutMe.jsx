@@ -71,10 +71,13 @@ const AboutMe = () => {
           </a>{" "}
           and go on runs to to get my ass of the computer.
         </p>
+        <Places>
+          <h3>I've worked for</h3>
+          <div className="workplaces">
+            
+          </div>
+        </Places>
       </AboutLeft>
-      <Places>
-        <h3>I've worked for</h3>
-      </Places>
     </AboutContainer>
   );
 };

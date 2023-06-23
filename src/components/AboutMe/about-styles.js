@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   margin: 0 auto;
   font-family: "Fira Code", monospace;
-  font-size: 1.5rem;
+  font-size: var(--fs2);
   background-color: #000;
   background-image: url(${Grainy});
   background-attachment: fixed;
@@ -80,10 +80,14 @@ export const AboutRight = styled.div`
     }
 `;
 
-
 export const Places = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
     `;
+
+export const WorkPlaces = styled.div`
+    display: flex;
+    gap: 1rem;
+`;
