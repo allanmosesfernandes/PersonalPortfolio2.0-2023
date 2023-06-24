@@ -35,9 +35,7 @@ const AboutMe = () => {
             {" "}
             Goa
           </a>
-          {/* <span className="city__life goa">
-            <img src={Goa} alt="lorem" />
-          </span> */}{" "}
+          {" "}
           raised in{" "}
           <a
             href="https://www.tripadvisor.co.uk/Tourism-g304554-Mumbai_Maharashtra-Vacations.html"
@@ -46,9 +44,6 @@ const AboutMe = () => {
           >
             Mumbai{" "}
           </a>
-          {/* <span className="city__life bom">
-            <img src={auto} alt="lorem" />
-          </span> */}
           currently in{" "}
           <a
             href="https://www.visit-nottinghamshire.co.uk/"
@@ -57,9 +52,6 @@ const AboutMe = () => {
           >
             Nottingham
           </a>{" "}
-          {/* <span className="city__life notts">
-            <img src={united} alt="lorem" />
-          </span> */}
           pursuing my Masters in Computer Science from NTU.
           <br />
           Currently on my placement year at{" "}
