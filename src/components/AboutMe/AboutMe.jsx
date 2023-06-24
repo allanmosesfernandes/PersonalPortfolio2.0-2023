@@ -1,9 +1,12 @@
 import React from "react";
-import { AboutContainer, AboutLeft, Places } from "./about-styles";
+import { AboutContainer, AboutLeft, Places, WorkPlaces } from "./about-styles";
 import Typewriter from "typewriter-effect";
 import nerd from "../../assets/images/home/nerd.png";
 import Arrow from "../../assets/images/about/arrow.svg";
 import DMG from "../../assets/images/about/orgs/dmg.svg";
+import NTSU from "../../assets/images/about/orgs/ntsu.png";
+import TSL from "../../assets/images/about/orgs/tsl.png";
+import Unifynd from "../../assets/images/about/orgs/unifynd.png";
 
 const AboutMe = () => {
   return (
@@ -57,7 +60,10 @@ const AboutMe = () => {
           {/* <span className="city__life notts">
             <img src={united} alt="lorem" />
           </span> */}
-          pursuing my Masters in Computer Science from NTU.<br />Currently on my placement year at <a href="https://www.trentstudents.org/">NTSU</a>.<br /> I also play
+          pursuing my Masters in Computer Science from NTU.
+          <br />
+          Currently on my placement year at{" "}
+          <a href="https://www.trentstudents.org/">NTSU</a>.<br /> I also play
           football,{" "}
           <a
             href="https://youtu.be/1IKM0uO5Stc"
@@ -70,12 +76,39 @@ const AboutMe = () => {
         </p>
         <Places>
           <h3>I've worked for</h3>
-          <div className="workplaces">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
+          <WorkPlaces>
+            <a
+              href="https://www.unifynd.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={NTSU} alt="" title="NTSU" />
+            </a>
+            <a
+              href="https://www.thisisdmg.com/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={DMG} alt="" title="This is DMG" />
+            </a>
+            <a
+              href="https://www.thestarterlabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={TSL} alt="" title="The Starter Labs" />
+            </a>
+            <a
+              href="https://www.unifynd.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Unifynd} alt="" title="Unifynd Technologies" />
+            </a>
+          </WorkPlaces>
         </Places>
       </AboutLeft>
     </AboutContainer>

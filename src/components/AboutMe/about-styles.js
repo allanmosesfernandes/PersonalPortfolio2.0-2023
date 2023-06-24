@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import squiggly from "../../assets/images/home/squiggly.svg";
-import Grainy from "../../assets/images/home/bg-grain-dark.png";
+import Grainy from "../../assets/images/home/bg-grain.png";
 
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: -3rem auto 0 auto;
   font-family: "Fira Code", monospace;
   font-size: var(--fs2);
   background-color: #000;
@@ -17,14 +17,13 @@ export const AboutContainer = styled.div`
   background-repeat: repeat;
   border-radius: 10px;
   padding: 2rem;
-  height: 100vh;
 `;
 export const AboutLeft = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
   width: 60%;
-
+  margin-top: 10rem;
   a {
     border-bottom: 1px dashed var(--base-orange);
     letter-spacing: 0rem;
@@ -81,13 +80,32 @@ export const AboutRight = styled.div`
 `;
 
 export const Places = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    `;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 3rem;
+  border-radius: 10px;
+  background-image: url(${Grainy});
+  margin: 3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+`;
 
 export const WorkPlaces = styled.div`
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    a {
+        border-bottom: none;
+
+        &:hover {
+            background-image: none;
+        }
+    }
+    img {
+        width: 150px;
+        height: 100px;
+        object-fit: contain;
+    }
 `;
