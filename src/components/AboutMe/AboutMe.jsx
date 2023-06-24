@@ -7,6 +7,7 @@ import DMG from "../../assets/images/about/orgs/dmg.svg";
 import NTSU from "../../assets/images/about/orgs/ntsu.png";
 import TSL from "../../assets/images/about/orgs/tsl.png";
 import Unifynd from "../../assets/images/about/orgs/unifynd.png";
+import BashTerminal from "./bashTerminal";
 
 const AboutMe = () => {
   return (
@@ -102,6 +103,7 @@ const AboutMe = () => {
             </a>
           </WorkPlaces>
         </Places>
+        <BashTerminal />
       </AboutLeft>
     </AboutContainer>
   );
