@@ -90,10 +90,11 @@ export const Terminal = styled.div`
   margin-left: 10rem;
   &.whiteTerminal {
     border: 1px solid #ffffff;
+    box-shadow: 2px 2px 0 #ffffff;
     width: 100%;
     margin: auto;
-    .terminal__commands span{
-     color: var(--base-orange);
+    .terminal__commands span {
+      color: #8ae234;
     }
   }
   .terminal-window {
