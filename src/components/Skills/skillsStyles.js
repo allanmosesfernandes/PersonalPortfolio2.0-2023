@@ -80,17 +80,29 @@ export const Terminal = styled.div`
   padding-top: 5px;
   -webkit-box-shadow: 4px 4px 0 #121217;
   box-shadow: 4px 4px 0 #121217;
+  font-family: "Space Mono", monospace;
+
   width: 70%;
   min-width: 500px;
   min-height: 250px;
   margin: 2rem 0;
   grid-gap: 2rem;
   margin-left: 10rem;
-
+  &.whiteTerminal {
+    border: 1px solid #ffffff;
+    width: 100%;
+    margin: auto;
+    .terminal__commands span{
+     color: var(--base-orange);
+    }
+  }
   .terminal-window {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    span {
+      color: #c4a000;
+    }
   }
   .terminal__user {
     color: #4e9a06;
@@ -98,17 +110,17 @@ export const Terminal = styled.div`
       color: #c4a000;
     }
   }
+
   @media only screen and (max-width: 600px) {
     //code goes here
     min-width: 0;
     margin-left: 0;
     width: 100%;
     .terminal__user {
-        font-size: 1.2rem;
-        gap: 0.5rem;
+      font-size: 1.2rem;
+      gap: 0.5rem;
     }
   }
-
 `;
 export const TechGrid = styled.div`
   display: grid;

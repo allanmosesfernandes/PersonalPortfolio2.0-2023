@@ -17,12 +17,12 @@ const BashTerminal = () => {
         allanfernandes@portfolio
         <span>~</span>
       </p>
-      <p>
+      <p className="terminal__commands">
         {" "}
         <Typewriter
           options={{
             strings: [
-              "$ mkdir <em>cool__project</em><br>$ cd cool__project/ <br>$ npm init -y",
+              "$ <span>mkdir</span> <em>cool_project</em><br>$ <span>cd</span> <em>cool_project/</em> <br>$ npm init -y",
             ],
             autoStart: true,
             loop: true,

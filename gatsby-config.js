@@ -29,7 +29,11 @@ module.exports = {
         web: [
           {
             name: "Fira Code",
-            file: 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap',
+            file: "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap",
+          },
+          {
+            name: "Space Mono",
+            file: "https://fonts.googleapis.com/css2?family=Space+Mono&display=swap",
           },
         ],
       },
