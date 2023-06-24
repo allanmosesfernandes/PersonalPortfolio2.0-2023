@@ -35,8 +35,7 @@ const AboutMe = () => {
           >
             {" "}
             Goa
-          </a>
-          {" "}
+          </a>{" "}
           raised in{" "}
           <a
             href="https://www.tripadvisor.co.uk/Tourism-g304554-Mumbai_Maharashtra-Vacations.html"
@@ -103,7 +102,14 @@ const AboutMe = () => {
             </a>
           </WorkPlaces>
         </Places>
+        <p>
+          I'm always excited to work on new projects & learn new things. I
+          believe in the power of open source and community and I'm always
+          looking to contribute to open source projects.
+          <br />
+        </p>
         <BashTerminal />
+        <p>Interested in doing something cool? Let's talk!</p>
       </AboutLeft>
     </AboutContainer>
   );

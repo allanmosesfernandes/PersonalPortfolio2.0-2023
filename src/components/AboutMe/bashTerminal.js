@@ -22,7 +22,7 @@ const BashTerminal = () => {
         <Typewriter
           options={{
             strings: [
-              "$ <span>mkdir</span> <em>cool_project</em><br>$ <span>cd</span> <em>cool_project/</em> <br>$ npm init -y",
+              "<strong>$</strong> <span>mkdir</span> <em>cool_project</em><br><strong>$</strong> <span>cd</span> <em>cool_project/</em> <br><strong>$</strong> npm init -y",
             ],
             autoStart: true,
             loop: true,

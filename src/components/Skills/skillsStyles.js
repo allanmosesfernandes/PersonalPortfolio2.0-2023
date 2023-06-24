@@ -81,7 +81,6 @@ export const Terminal = styled.div`
   -webkit-box-shadow: 4px 4px 0 #121217;
   box-shadow: 4px 4px 0 #121217;
   font-family: "Space Mono", monospace;
-
   width: 70%;
   min-width: 500px;
   min-height: 250px;
@@ -92,9 +91,9 @@ export const Terminal = styled.div`
     border: 1px solid #ffffff;
     box-shadow: 2px 2px 0 #ffffff;
     width: 100%;
-    margin: auto;
+    margin: 3rem auto;
     .terminal__commands span {
-      color: #8ae234;
+      color: #4e9a06;
     }
   }
   .terminal-window {
