@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutContainer, AboutLeft, Places, WorkPlaces } from "./about-styles";
 import Typewriter from "typewriter-effect";
-import nerd from "../../assets/images/home/nerd.png";
+import nerd from "../../assets/images/about/profile-pic.png";
 import Arrow from "../../assets/images/about/arrow.svg";
 import DMG from "../../assets/images/about/orgs/dmg.svg";
 import NTSU from "../../assets/images/about/orgs/ntsu.png";

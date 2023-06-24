@@ -57,8 +57,8 @@ export const AboutLeft = styled.div`
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 1px solid white;
     background-color: black;
+    filter: grayscale(1);
   }
 
   .about__arrow {
