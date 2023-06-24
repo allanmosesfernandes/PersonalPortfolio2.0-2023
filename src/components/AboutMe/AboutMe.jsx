@@ -78,7 +78,7 @@ const AboutMe = () => {
           <h3>I've worked for</h3>
           <WorkPlaces>
             <a
-              href="https://www.unifynd.com/"
+              href="https://www.trentstudents.org/"
               target="_blank"
               rel="noopener noreferrer"
             >

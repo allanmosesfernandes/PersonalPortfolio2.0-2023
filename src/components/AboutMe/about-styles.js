@@ -17,6 +17,11 @@ export const AboutContainer = styled.div`
   background-repeat: repeat;
   border-radius: 10px;
   padding: 2rem;
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    margin: 3rem auto 0 auto;
+    font-size: 1.5rem;
+  }
 `;
 export const AboutLeft = styled.div`
   display: flex;
@@ -91,6 +96,13 @@ export const Places = styled.div`
   background-image: url(${Grainy});
   margin: 3rem 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    @media only screen and (max-width: 600px) {
+  //code goes here
+    padding: 1rem;
+    }
+  h3 {
+    font-weight: normal;
+  }
 `;
 
 export const WorkPlaces = styled.div`
