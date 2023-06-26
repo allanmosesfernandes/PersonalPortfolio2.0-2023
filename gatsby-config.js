@@ -1,3 +1,4 @@
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -9,15 +10,26 @@
  *
  * 
  */
+require("dotenv").config({path: ".env" });
+
 module.exports = {
   plugins: [
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "lyairl50",
+        dataset: "production",
+        token: process.env.SANITY_TOKEN,
+        watchMode: true,
+      },
+    },
     {
       resolve: "gatsby-plugin-styled-components",
       options: {
         displayName: true,
       },
     },
-
     {
       resolve: "gatsby-omni-font-loader",
       options: {
