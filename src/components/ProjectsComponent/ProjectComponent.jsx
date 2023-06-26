@@ -1,10 +1,28 @@
 import React from 'react';
 
-const ProjectComponent = () => {
+const ProjectComponent = ({ data }) => {
+  console.log(data);
   return (
-    <div>
-      <h1>ProjectComponent</h1>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Project</th>
+          <th>Built with</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((project,index) => (
+          <tr key={index}>
+            <td>{project.Year}</td>
+            <td>{project.Title}</td>
+            <td>{project.builtWith}</td>
+            <td>{project.ProjectLink}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
 
