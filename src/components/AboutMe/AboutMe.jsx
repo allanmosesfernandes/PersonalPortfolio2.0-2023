@@ -52,9 +52,8 @@ const AboutMe = () => {
           >
             Nottingham
           </a>{" "}
-          pursuing my Masters in Computer Science from NTU.
-          <br />
-          Currently on my placement year at{" "}
+          pursuing my Masters in Computer Science from NTU,
+          currently on my placement year at{" "}
           <a href="https://www.trentstudents.org/">NTSU</a>.<br /> I also play
           football,{" "}
           <a
