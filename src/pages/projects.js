@@ -1,9 +1,13 @@
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import React from 'react';
+import { ProjectsContainer } from "../components/ProjectsComponent/ProjectStyles";
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <ProjectsContainer className='wrapper'>
+      <Link to='/' className='backLink'>Allan Fernandes</Link>
+      <h1>All Projects</h1>
+    </ProjectsContainer>
   );
 };
 
