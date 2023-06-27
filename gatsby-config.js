@@ -13,6 +13,10 @@
 require("dotenv").config({path: ".env" });
 
 module.exports = {
+  /* Your site config here */
+  siteMetadata: {
+    title: "Allan Fernandes",
+    description: "Allan Fernandes is a frontend developer based in Nottingham, UK. He is a Computer Science post graduate from NTU, Goa Campus. He is currently working as a web developer at NTSU.",
   plugins: [
     "gatsby-plugin-image",
     {
