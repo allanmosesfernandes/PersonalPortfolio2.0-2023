@@ -8,9 +8,9 @@ export const ProjectsContainer = styled.div`
 
   .built__with {
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: var(--base-orange);
-    padding: 1rem 0.5rem;
+    padding: 1rem;
     opacity: 0.8;
     display: inline-block;
     margin: 1rem;
