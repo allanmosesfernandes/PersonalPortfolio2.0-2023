@@ -1,9 +1,28 @@
+import { graphql } from "gatsby";
 import React from "react";
+import FeaturedBlogs from "../components/BlogComponents/FeaturedBlogs";
 
-const Blog = () => {
+const Blog = ({ data }) => {
+  const BlogData = data.allSanityBlog.nodes;
   return (
-    <div>Blog</div>
+    <>
+      <FeaturedBlogs data = { BlogData }/>
+    </>
   );
 };
 
 export default Blog;
+export const blogQuery = graphql`
+  query MyQuery {
+    allSanityBlog {
+      nodes {
+        Title
+        coverImage {
+          asset {
+            gatsbyImage(height: 100)
+          }
+        }
+      }
+    }
+  }
+`;
