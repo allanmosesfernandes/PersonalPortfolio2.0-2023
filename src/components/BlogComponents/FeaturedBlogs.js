@@ -1,8 +1,13 @@
 import React from 'react';
+import {TwitterTweetEmbed} from "react-twitter-embed";
+import { BlogListContainer } from './BlogStyles';
 
-const FeaturedBlogs = () => {
+const FeaturedBlogs = ({ data }) => {
+  console.log(data);
   return (
-    <div>FeaturedBlogs</div>
+    <BlogListContainer className='wrapper'>
+      <TwitterTweetEmbed tweetId={"1672156965693272066"} />
+    </BlogListContainer>
   );
 };
 
