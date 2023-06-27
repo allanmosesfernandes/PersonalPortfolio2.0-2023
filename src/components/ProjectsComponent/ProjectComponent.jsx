@@ -35,7 +35,11 @@ const ProjectComponent = ({ data }) => {
                 })}
               </td>
               <td>
-                <a className="project__link" href={project.ProjectLink}>
+                <a className="project__link" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  href={project.ProjectLink}
+                >
                   {extractedURL}
                 </a>
               </td>
