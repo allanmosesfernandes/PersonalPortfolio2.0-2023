@@ -1,7 +1,7 @@
 import { Link, graphql } from 'gatsby';
 import React from 'react';
 import { ProjectsContainer } from "../components/ProjectsComponent/ProjectStyles";
-import ProjectComponent from '../components/ProjectsComponent/ProjectComponent';
+import ProjectComponent from "../components/ProjectsComponent/ProjectComponent";
 
 const Projects = ({ data }) => {
   const ProjectData = data.allSanityProject.nodes;
@@ -20,7 +20,7 @@ const Projects = ({ data }) => {
 export default Projects;
 export const projectsQuery = graphql`
   query ProjectsQuery {
-    allSanityProject(sort: { fields: Year, order: DESC }) {
+    allSanityProject(sort: { Year: DESC }) {
       nodes {
         BuiltWith
         ProjectLink
