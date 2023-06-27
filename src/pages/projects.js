@@ -20,7 +20,7 @@ const Projects = ({ data }) => {
 export default Projects;
 export const projectsQuery = graphql`
   query ProjectsQuery {
-    allSanityProject {
+    allSanityProject(sort: { fields: Year, order: DESC }) {
       nodes {
         BuiltWith
         ProjectLink
