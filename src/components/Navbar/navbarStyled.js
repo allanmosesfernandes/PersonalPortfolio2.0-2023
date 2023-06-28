@@ -97,6 +97,11 @@ export const StyledNavbar = styled.nav`
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     padding: 3rem;
   }
+  .logo {
+    //no animation
+    animation: none;
+    opacity: 1;
+  }
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
@@ -113,6 +118,7 @@ export const StyledNavbar = styled.nav`
   h2 {
     font-weight: 500;
     font-size: 2rem;
+    font-family: "Space Mono", monospace;
     span {
       color: var(--base-orange);
       animation: ${blinkAnimation} 3s infinite;

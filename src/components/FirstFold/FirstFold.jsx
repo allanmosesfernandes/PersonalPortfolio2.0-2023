@@ -35,7 +35,7 @@ function FirstFold() {
               making cool things that live on the internet.
             </p>
             <p>
-              I've been making websites for the past two and a half years often
+              I've been making websites for almost three years often
               using pure Javascript, (S)CSS, jQuery and other random web tech.
             </p>
             <p>

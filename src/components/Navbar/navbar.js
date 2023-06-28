@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
 import plus from "../../assets/images/alt/plus.svg";
+import logo from "../../assets/images/home/logo.png";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -32,34 +33,30 @@ function Navbar() {
       {isMobile ? (
         <>
           <Link to="/">
-            <h2>Allan</h2>
+            <h2>
+              <span>
+                <img src={logo} alt="logo" className="logo" />
+              </span>
+            </h2>
           </Link>
           {showHamburger && (
             <MenuToggle onClick={toggleHamburgerMenu}>
               <div className={toggleHamburger ? "hamBox hamBoxOpen" : "hamBox"}>
                 <img
                   className={
-                    toggleHamburger
-                      ? "hamburger__icon spin"
-                      : "hamburger__icon"
+                    toggleHamburger ? "hamburger__icon spin" : "hamburger__icon"
                   }
                   src={plus}
                   alt="plus"
                 />
-                {/* <span
-                  className={toggleHamburger ? "lineTop spin" : "lineTop"}
-                />
-                <span
-                  className={toggleHamburger ? "lineBottom spin" : "lineBottom"}
-                /> */}
               </div>
             </MenuToggle>
           )}
         </>
       ) : (
         <>
-          <Link to="/">
-            <h2>allan fernandes</h2>
+          <Link to="/" className="logoContainer">
+            <img src={logo} alt="logo" className="logo" />
           </Link>
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
@@ -76,8 +73,7 @@ function Navbar() {
         style={{
           top: toggleHamburger ? "0" : "-100%",
           transitionDelay: toggleHamburger ? "0.5s" : "0s",
-        }}
-      >
+        }}>
         <StyledHamburgerList>
           <li className="hamburger__link">
             <Link
