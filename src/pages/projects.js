@@ -10,8 +10,6 @@ const Projects = ({ data }) => {
       <Link to='/' className='backLink'>Allan Fernandes</Link>
       <h1>All Projects</h1>
       <ProjectComponent data = { ProjectData }/>
-
-                
     </ProjectsContainer>
   );
 };

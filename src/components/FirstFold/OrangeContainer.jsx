@@ -14,7 +14,7 @@ const StyledOrangeContainer = styled.div`
   border-radius: 10px;
   font-family: "Fira Code", monospace;
   font-size: var(--fs3);
-  width: 100%;
+  width: 98%;
 
   @media only screen and (max-width: 768px) {
     //code goes here
@@ -60,6 +60,10 @@ const StyledOrangeRight = styled.div`
   background-color: var(--base-orange);
   border-radius: 10px;
   font-weight: 500;
+  .projectsBtn {
+    display: flex;
+    gap: 0.5rem;
+  }
   // on hover extend the button
   &:hover {
     .buttonCircle {
@@ -123,10 +127,12 @@ function OrangeContainer() {
         </div>
       </StyledOrangeLeft>
       <StyledOrangeRight>
-        <Link to="/projects">All Projects</Link>
-        <div className="buttonCircle">
-          <img src={primaryButton} alt="primaryButton" />
-        </div>
+        <Link to="/projects" className="projectsBtn">
+          All Projects
+          <div className="buttonCircle">
+            <img src={primaryButton} alt="primaryButton" />
+          </div>
+        </Link>
       </StyledOrangeRight>
     </StyledOrangeContainer>
   );

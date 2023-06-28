@@ -33,7 +33,7 @@ export const FirstFoldContainer = styled.div`
   background-position: center;
   background-repeat: repeat;
   border-radius: 10px;
-  width: 100%;
+  width: 98%;
   display: flex;
   padding: 2rem;
   height: 100%;
