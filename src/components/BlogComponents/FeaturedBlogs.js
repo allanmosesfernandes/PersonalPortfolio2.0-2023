@@ -13,13 +13,17 @@ const FeaturedBlogs = ({ data }) => {
         
           return (
             <BlogCard key={_id} className="">
-              <div className='card--left'>
+              <div className="card__left">
                 <p className="category">{categories[0].title}</p>
                 <h1>{Title}</h1>
                 <p>{publishedDate}</p>
                 <p>{excerpt[0]?.children[0]?.text}</p>
               </div>
-              <GatsbyImage image={blogImage} alt="dfdf" className='coverImage'/>
+              <GatsbyImage
+                image={blogImage}
+                alt="dfdf"
+                className="coverImage"
+              />
             </BlogCard>
           );
         })}
