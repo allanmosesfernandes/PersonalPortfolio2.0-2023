@@ -17,9 +17,16 @@ export const blogQuery = graphql`
     allSanityBlog {
       nodes {
         Title
-        coverImage {
-          asset {
-            gatsbyImage(height: 100)
+        publishedDate
+        slug {
+          current
+        }
+        categories {
+          title
+        }
+        excerpt {
+          children {
+            text
           }
         }
       }
