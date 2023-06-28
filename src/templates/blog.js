@@ -42,7 +42,12 @@ const BlogTemplate = ({ data }) => {
 
   return (
     <BlogBody>
-      <PortableText value={_rawContent} components={myPortableTextComponents} />
+      <div>
+        <PortableText
+          value={_rawContent}
+          components={myPortableTextComponents}
+        />
+      </div>
     </BlogBody>
   );
 };
