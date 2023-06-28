@@ -10,21 +10,21 @@ exports.createPages = async function ({ graphql, actions }) {
           slug {
             current
           }
+          _id
         }
       }
     }
   `);
 
   if (result.errors) throw result.errors;
-
-  const blogNodes = (result.data.allSanityBlog || {}).nodes || [];
-
-  blogNodes.forEach((node) => {
-    const { slug = {} } = node;
+  result.data.allSanityBlog.nodes.forEach((blog) => {
+    const slug = blog.slug.current;
+    const id = blog._id;
     createPage({
-      path: `/blog/${slug.current}`,
+      path: `/blog/${slug}`,
       component: SingleBlogTemplate,
-      context: { slug: slug.current },
+      context: { slug: slug,id: id },
     });
-  });
+  }
+  );
 };
