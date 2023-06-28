@@ -8,36 +8,36 @@ const Blog = ({ data }) => {
   return (
     <div className="wrapper">
       <TwitterTweetEmbed tweetId={"1672156965693272066"} />
-      <FeaturedBlogs data={BlogData} />
+      {/* <FeaturedBlogs data={BlogData} /> */}
     </div>
   );
 };
 
 export default Blog;
-export const blogQuery = graphql`
-  query MyQuery {
-    allSanityBlog {
-      nodes {
-        Title
-        publishedDate
-        slug {
-          current
-        }
-        categories {
-          title
-        }
-        excerpt {
-          children {
-            text
-          }
-        }
-        _id
-        coverImage {
-          asset {
-            gatsbyImage(height: 100)
-          }
-        }
-      }
-    }
-  }
-`;
+// export const blogQuery = graphql`
+//   query MyQuery {
+//     allSanityBlog {
+//       nodes {
+//         Title
+//         publishedDate
+//         slug {
+//           current
+//         }
+//         categories {
+//           title
+//         }
+//         excerpt {
+//           children {
+//             text
+//           }
+//         }
+//         _id
+//         coverImage {
+//           asset {
+//             gatsbyImage(height: 100)
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;

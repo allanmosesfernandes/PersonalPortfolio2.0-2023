@@ -1,6 +1,6 @@
-import React from 'react';
-import { BlogCard, BlogListContainer } from './BlogStyles';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import React from "react";
+import { BlogCard, BlogListContainer } from "./BlogStyles";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const FeaturedBlogs = ({ data }) => {
   return (
