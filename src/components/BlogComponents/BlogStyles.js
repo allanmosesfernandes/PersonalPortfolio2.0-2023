@@ -6,9 +6,29 @@ export const BlogListContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem auto;
     padding: 2rem 0;
     width: 100%;
+    font-family: "Fira Code", monospace;
+
+`;
+
+export const BlogCard = styled.div`
+  display: flex;
+  width: 100%;
+  .category {
+    font-size: 1.2rem;  
+    background-color: var(--base-orange);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 20px;
+    opacity: 0.8;
+    .card--left {
+        width: 75%;
+    }
+    .coverImage {
+        margin-left: auto;
+    }
 `;
 
 export const FullWidthBlogBg = styled.div`
