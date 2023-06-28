@@ -10,7 +10,16 @@ export const BlogListContainer = styled.div`
     padding: 2rem 0;
     width: 100%;
     font-family: "Fira Code", monospace;
-
+    .lodu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
 `;
 
 export const BlogCard = styled.div`
@@ -19,11 +28,31 @@ export const BlogCard = styled.div`
   width: 80%;
   padding: 2rem;
   border: 2px solid var(--base-orange);
+  font-family: "Space Mono", monospace;
   border-radius: 10px;
   margin: 2rem auto;
   justify-content: space-between;
+  cursor: pointer;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 1rem;
+  }
   .card__left {
     width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    .card__left {
+      width: 100%;
+    }
+
+    .excerpt {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .excerpt {
+    font-size: var(--fs2);
   }
   .category {
     font-size: 1.2rem;
@@ -35,9 +64,10 @@ export const BlogCard = styled.div`
 
     .coverImage {
       margin-left: auto;
-      .gatsby-image-wrapper img{
+      .gatsby-image-wrapper img {
         border-radius: 10px;
-      } img {
+      }
+      img {
         width: 100%;
         object-fit: contain;
         border-radius: 10px;
