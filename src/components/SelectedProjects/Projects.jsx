@@ -23,7 +23,8 @@ function Projects() {
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
           ProjectImage={DailyStoic}
-          ProjectDescription="Website design & development."
+          //how do I add a linebreak here?
+          ProjectDescription="Conceptualized, designed & developed a web app for daily stoic reminders using React."
         />
         <SingleProject
           ProjectUrl="https://ankanchittalipi.com/"
