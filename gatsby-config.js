@@ -17,9 +17,11 @@ module.exports = {
     title: "Allan Fernandes",
     description:
       "Allan Fernandes is a frontend developer based in Nottingham, UK. He is a Computer Science post graduate from NTU, Goa Campus. He is currently working as a web developer at NTSU.",
+    siteUrl: "https://allanfernandes.dev/",
   },
   plugins: [
     "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-sanity",
       options: {
@@ -63,7 +65,7 @@ module.exports = {
           head: true,
         },
       },
-    }
+    },
   ],
 };
 
