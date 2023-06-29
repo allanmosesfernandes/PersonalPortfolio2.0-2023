@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { AboutContainer, AboutLeft, Places, WorkPlaces } from "./about-styles";
 import Typewriter from "typewriter-effect";
 import nerd from "../../assets/images/about/profile-pic.png";
@@ -13,6 +14,7 @@ const AboutMe = () => {
   return (
     <AboutContainer className="">
       <AboutLeft>
+
         <img src={nerd} className="about__picture" />
         <p>Hey! I'm Allan.</p>
         <img src={Arrow} className="about__arrow" />
@@ -52,10 +54,9 @@ const AboutMe = () => {
           >
             Nottingham
           </a>{" "}
-          pursuing my Masters in Computer Science from NTU,
-          currently on my placement year at{" "}
-          <a href="https://www.trentstudents.org/">NTSU</a>.<br /> I also play
-          football,{" "}
+          pursuing my Masters in Computer Science from NTU, currently on my
+          placement year at <a href="https://www.trentstudents.org/">NTSU</a>.
+          <br /> I also play football,{" "}
           <a
             href="https://youtu.be/1IKM0uO5Stc"
             target="_blank"

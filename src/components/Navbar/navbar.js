@@ -61,7 +61,7 @@ function Navbar() {
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
             <Link to="/projects">projects</Link>
-            <Link to="/contact">contact</Link>
+            {/* <Link to="/contact">contact</Link> */}
           </StyledNavbarLinks>
           <Link to="/blog">
             <Button>Blog</Button>
