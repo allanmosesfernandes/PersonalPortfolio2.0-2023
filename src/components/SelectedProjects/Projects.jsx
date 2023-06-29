@@ -7,7 +7,7 @@ import {
 import DailyStoic from "../../../src/assets/images/project-images/1.png";
 import ankan from "../../../src/assets/images/project-images/2.png";
 import apex from "../../../src/assets/images/project-images/3.png";                                  
-import trent from "../../../src/assets/images/project-images/trentt.png";
+import trent from "../../../src/assets/images/project-images/fresh.png";
 import SingleProject from './SingleProject';
 
 function Projects() {
