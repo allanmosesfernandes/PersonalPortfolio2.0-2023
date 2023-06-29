@@ -22,7 +22,8 @@ export const ProjectsWrapper = styled.div`
   div:nth-child(even) a {
     flex-direction: row-reverse;
   }
-  @media only screen and (max-width: 600px) {
+
+  @media only screen and (max-width: 1000px) {
     //code goes here
 
     div:nth-child(even) a {
@@ -36,12 +37,13 @@ export const ProjectSingle = styled.div`
     display: flex;
     cursor: url(${MegaCursor}), auto;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     //code goes here
     a {
       flex-direction: column-reverse;
     }
     .block__one {
+      text-align: center;
       .block_title {
         font-size: var(--fs2);
       }
@@ -83,7 +85,7 @@ export const ProjectSingle = styled.div`
     font-style: italic;
     display: flex;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     //code goes here
     .block__two {
       border: none;

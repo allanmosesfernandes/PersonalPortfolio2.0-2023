@@ -83,8 +83,28 @@ export const MenuToggle = styled.div`
   }
 } */
 `;
+
 // Apply the animation to the image
 export const StyledNavbar = styled.nav`
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  z-index: 999;
+  transition: all 0.2s ease-in;
+  background-color: transparent !important;
+
+  &.fixed-navbar {
+    position: fixed;
+    top: 0;
+    background: #000000 !important;
+    border-bottom: 4px solid var(--base-orange);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.2s ease-in;
+  }
+  //blur the navbar
+
   .nav-overlay {
     position: fixed;
     top: -100%;
@@ -114,13 +134,11 @@ export const StyledNavbar = styled.nav`
   font-family: "Fira Code", monospace;
   font-size: 2rem;
   justify-content: space-between;
-  transition: all 0.2s ease-in-out;
-  background: #000000;
+  transition: all 0.2s ease-in;
   z-index: 1;
-  position: relative;
-  border-bottom: 2px solid var(--base-orange);
+  border-bottom: 4px solid var(--base-orange);
   margin-bottom: 3rem;
-  //blur the navbar 
+  //blur the navbar
   h2 {
     font-weight: 500;
     font-size: 2rem;
@@ -157,7 +175,7 @@ export const StyledNavbarLinks = styled.div`
     background-position-y: bottom;
     border-bottom: 1px dashed var(--base-orange);
     position: relative;
-    
+
     &:hover {
       color: white;
       background-image: url(${squiggly});
@@ -168,7 +186,6 @@ export const StyledNavbarLinks = styled.div`
       transition: all 0.2s ease-in-out;
     }
   }
-
 `;
 
 export const StyledHamburgerList = styled.ul`
