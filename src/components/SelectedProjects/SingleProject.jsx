@@ -8,7 +8,7 @@ function SingleProject(props) {
   // if screen width < 600 setBlinky to true
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 1000) {
         setBlinky(true);
       } else {
         setBlinky(false);

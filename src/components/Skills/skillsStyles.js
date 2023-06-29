@@ -83,7 +83,7 @@ export const Terminal = styled.div`
   -webkit-box-shadow: 4px 4px 0 #121217;
   box-shadow: 4px 4px 0 #121217;
   font-family: "Space Mono", monospace;
-  width: 70%;
+  width: 80%;
   min-width: 500px;
   min-height: 250px;
   margin: 2rem 0;
