@@ -24,8 +24,9 @@ export const ProjectsWrapper = styled.div`
   }
   @media only screen and (max-width: 600px) {
     //code goes here
+
     div:nth-child(even) a {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
   }
 `;
@@ -38,7 +39,7 @@ export const ProjectSingle = styled.div`
   @media only screen and (max-width: 600px) {
     //code goes here
     a {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     .block__one {
       .block_title {
@@ -68,11 +69,12 @@ export const ProjectSingle = styled.div`
     border-left: 2px solid var(--base-gray);
     border-right: 2px solid var(--base-gray);
     min-width: 300px;
-    height: 200px;
+    height: 300px;
     display: flex;
     justify-content: center;
     img {
       padding: 1rem;
+      object-fit: contain;
     }
   }
 

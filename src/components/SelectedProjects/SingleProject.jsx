@@ -38,7 +38,7 @@ function SingleProject(props) {
       {/* Rest of the code */}
       <a href={ProjectUrl} target="_blank" rel="noopener noreferrer">
         <div className="block__one">
-          <p className="block_title">{ProjectTitle}</p>
+
           <p>{ProjectDescription}</p>
         </div>
         <div className="block__two">

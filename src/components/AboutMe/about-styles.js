@@ -29,6 +29,8 @@ export const AboutLeft = styled.div`
   margin: 0 2rem;
   width: 60%;
   margin-top: 10rem;
+  font-size: 1.5rem;
+  font-family: "Space Mono", monospace;
   a {
     border-bottom: 1px dashed var(--base-orange);
     letter-spacing: 0rem;

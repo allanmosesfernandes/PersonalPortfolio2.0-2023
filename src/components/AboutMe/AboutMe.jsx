@@ -104,7 +104,7 @@ const AboutMe = () => {
         <p>
           I'm always excited to work on new projects & learn new things. I
           believe in the power of open source and community and I'm always
-          looking to contribute to open source projects.
+          looking collaborate with small businesses and startups.
           <br />
         </p>
         <BashTerminal />

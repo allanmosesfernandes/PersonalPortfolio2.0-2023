@@ -18,7 +18,16 @@ export const SpotifyCompWrapper = styled.div`
     transform-origin: center center;
   }
   .sounds__svg {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    .sounds__svg {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 `;
 

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Grainy from "../../assets/images/home/bg-grain.png";
+import GrainyBlack from "../../assets/images/home/bg-grain-dark.png";
 import CursorBlack from "../../assets/images/home/cursorblack.svg";
 
 export const SkillsContainer = styled.div`
@@ -90,6 +91,7 @@ export const Terminal = styled.div`
   &.whiteTerminal {
     border: 1px solid #ffffff;
     box-shadow: 2px 2px 0 #ffffff;
+    background-image: url(${GrainyBlack});
     width: 100%;
     margin: 3rem auto;
     .terminal__commands span {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
-import plus from "../../assets/images/alt/plus.svg";
+import plus from "../../assets/images/alt/plus-sign.svg";
 import logo from "../../assets/images/home/logo.png";
 
 function Navbar() {
@@ -95,17 +95,12 @@ function Navbar() {
             <div className="hamburger__link__wrapper" />
           </li>
           <li className="hamburger__link">
-            <Link to="/" onClick={toggleHamburgerMenu}>
-              Works
+            <Link to="/projects" onClick={toggleHamburgerMenu}>
+              Projects
             </Link>
             <div className="hamburger__link__wrapper" />
           </li>
-          <li className="hamburger__link">
-            <Link to="/" onClick={toggleHamburgerMenu}>
-              Contact
-            </Link>
-            <div className="hamburger__link__wrapper" />
-          </li>
+
         </StyledHamburgerList>
       </div>
     </StyledNavbar>

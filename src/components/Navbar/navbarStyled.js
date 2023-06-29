@@ -102,6 +102,12 @@ export const StyledNavbar = styled.nav`
     animation: none;
     opacity: 1;
   }
+  @media only screen and (max-width: 600px) {
+    //code goes here#
+    .logo {
+      margin-left: 2rem;
+    }
+  }
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
@@ -119,10 +125,10 @@ export const StyledNavbar = styled.nav`
     font-weight: 500;
     font-size: 2rem;
     font-family: "Space Mono", monospace;
-    span {
+    /* span {
       color: var(--base-orange);
       animation: ${blinkAnimation} 3s infinite;
-    }
+    } */
   }
   img {
     width: 80px;

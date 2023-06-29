@@ -4,10 +4,10 @@ import {
   ProjectsContainer,
   ProjectsWrapper,
 } from "./styledProjects";
-import DailyStoic from "../../../src/assets/images/project-images/daily-stoic.png";
-import ankan from "../../../src/assets/images/project-images/ankan.webp";
-import apex from "../../../src/assets/images/project-images/apex-academy.png";
-import trent from "../../../src/assets/images/project-images/trent.png";
+import DailyStoic from "../../../src/assets/images/project-images/1.png";
+import ankan from "../../../src/assets/images/project-images/2.png";
+import apex from "../../../src/assets/images/project-images/3.png";                                  
+import trent from "../../../src/assets/images/project-images/trentt.png";
 import SingleProject from './SingleProject';
 
 function Projects() {
