@@ -3,8 +3,13 @@ import styled from "styled-components";
 import { AiFillGithub } from "react-icons/ai";
 import { GrLinkedinOption } from "react-icons/gr";
 import { SiGmail } from "react-icons/si";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import primaryButton from "../../assets/images/home/primaryButton.svg";
+
+//redirect using navigate
+const redirect = () => {
+  navigate("/projects");
+};
 
 const StyledOrangeContainer = styled.div`
   display: flex;
@@ -54,6 +59,7 @@ const StyledOrangeRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   gap: 2rem;
   width: 100%;
   color: #000000;
@@ -126,7 +132,7 @@ function OrangeContainer() {
           </a>
         </div>
       </StyledOrangeLeft>
-      <StyledOrangeRight>
+      <StyledOrangeRight onClick={redirect}>
         <Link to="/projects" className="projectsBtn">
           All Projects
           <div className="buttonCircle">

@@ -37,7 +37,7 @@ export const SpotifyIntro = styled.div`
   align-items: center;
   justify-content: center;
   font-family: "Fira Code", monospace;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   padding: 2rem;
   img {

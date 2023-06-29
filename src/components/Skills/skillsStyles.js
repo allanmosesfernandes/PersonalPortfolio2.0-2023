@@ -18,6 +18,7 @@ export const SkillsContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
+    font-family: "Space Mono", monospace;
     //On hover rotate the asterik icon
     &:hover {
       img {
