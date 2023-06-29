@@ -31,6 +31,7 @@ const SEO = ({ children, location, description, title, image}) => {
       <meta property="og:title" content={title} key="ogtitle" />
       <meta property="og:site_name" content={site.siteMetadata.title} key="ogsitename" />
       <meta property="og:description" content={description} key="ogdesc" />
+      { children }
     </Helmet>
   );
 }; 
