@@ -94,9 +94,10 @@ export const ProjectSingle = styled.div`
       display: flex;
       justify-content: center;
       img {
-        padding: 0rem;
-        object-position: top;
+        object-position: center;
         object-fit: cover;
+        border: 1px solid var(--base-orange);
+        padding: 2rem;
       }
     }
     .block__three {

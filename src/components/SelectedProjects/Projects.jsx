@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <ProjectsContainer className="wrapper">
-      <div className="projects__title">Few of my Projects</div>
+      <div className="projects__title">Few of my finest</div>
       <ProjectsWrapper>
         <SingleProject
           ProjectUrl="https://dailystoicreminders.uk/"
@@ -48,7 +48,7 @@ function Projects() {
           onMouseEnter={() => setBlinky(true)}
           onMouseLeave={() => setBlinky(false)}
           ProjectImage={apex}
-          ProjectDescription="Website design & development for @apexacademy using React."
+          ProjectDescription="Website design & development for @apexacademy using React & Styled Components"
         />
       </ProjectsWrapper>
     </ProjectsContainer>

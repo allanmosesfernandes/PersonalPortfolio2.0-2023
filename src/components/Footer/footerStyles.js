@@ -17,7 +17,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const ContactMarquee = styled.div`
-  font-size: 10rem;
+  font-size: 8rem;
   width: 100%;
   text-transform: uppercase;
   display: flex;
