@@ -5,7 +5,11 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Fira Code", monospace;
-
+@media only screen and (max-width: 600px) {
+  //code goes here
+  margin-top: 8rem;
+  padding: 1rem;
+}
   .built__with {
     margin-right: 5px;
     border-radius: 30px;
@@ -22,6 +26,11 @@ export const ProjectsContainer = styled.div`
       content: "←";
       margin-right: 0.5rem;
     }
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      font-size: 1.5rem;
+    }
+
   }
   h1 {
     font-size: 3rem;
