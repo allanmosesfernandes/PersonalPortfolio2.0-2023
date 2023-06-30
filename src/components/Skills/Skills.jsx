@@ -26,7 +26,6 @@ import {motion, useInView, animate } from "framer-motion";
 function Skills() {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 0.2], [0.5, 1]);
-  console.log(scale);
   return (
     <SkillsContainer className="wrapper">
       <div className="skills__title">

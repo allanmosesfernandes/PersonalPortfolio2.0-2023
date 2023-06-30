@@ -15,7 +15,7 @@ function Projects() {
 
   return (
     <ProjectsContainer className="wrapper">
-      <div className="projects__title">Some Projects</div>
+      <div className="projects__title">Few of my Projects</div>
       <ProjectsWrapper>
         <SingleProject
           ProjectUrl="https://dailystoicreminders.uk/"
