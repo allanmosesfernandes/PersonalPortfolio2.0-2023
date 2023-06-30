@@ -37,7 +37,6 @@ export const MenuToggle = styled.div`
     padding: 0;
     margin: 0 2rem;
     .hamburger__icon {
-      width: 30px;
       animation: none;
       transition: all 0.5s ease-in-out;
 
@@ -123,7 +122,9 @@ export const StyledNavbar = styled.nav`
     opacity: 1;
   }
   @media only screen and (max-width: 600px) {
-    //code goes here#
+    //code goes here
+    background-color: #000000 !important;
+    position: fixed;
     .logo {
       margin-left: 2rem;
     }
@@ -135,7 +136,7 @@ export const StyledNavbar = styled.nav`
   font-size: 2rem;
   justify-content: space-between;
   transition: all 0.2s ease-in;
-  z-index: 1;
+  z-index: 999;
   border-bottom: 4px solid var(--base-orange);
   margin-bottom: 3rem;
   //blur the navbar

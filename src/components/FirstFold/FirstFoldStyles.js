@@ -45,6 +45,9 @@ export const FirstFoldContainer = styled.div`
     flex-direction: column;
     z-index: -1;
     height: 100%;
+    margin-top: 8rem;
+    width: 100%;
+    padding: 1rem;
     .firstFold__left {
       width: 100% !important;
     }
@@ -134,9 +137,17 @@ export const FirstFoldContainer = styled.div`
     align-items: center;
     z-index: 99;
     padding: 2rem;
+    @media only screen and (max-width: 800px) {
+      //code goes here
+      margin: auto;
+      width: 100%;
+    }
     @media only screen and (max-width: 600px) {
       //code goes here
       margin: auto;
+      img {
+        width: 150px !important;
+      }
     }
     .window-pane {
       width: 100%;

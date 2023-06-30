@@ -53,6 +53,13 @@ const StyledOrangeLeft = styled.div`
       height: 50px;
     }
   }
+  @media only screen and (max-width: 500px) {
+    //code goes here
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
 `;
 
 const StyledOrangeRight = styled.div`
@@ -69,6 +76,11 @@ const StyledOrangeRight = styled.div`
   .projectsBtn {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+      //code goes here
+      font-size: var(--fs2);
+    }
   }
   // on hover extend the button
   &:hover {
