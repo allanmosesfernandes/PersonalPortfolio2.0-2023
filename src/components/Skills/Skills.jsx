@@ -35,8 +35,8 @@ function Skills() {
       <p>
         <img src={Asterik} alt="Asterik" className="ill" />
           Programming languages, frameworks, tools & products I've had
-          hands-down experience and while I won't claim mastery in all of them,
-          I've fearlessly delved into their realms, expanding my skills I'm
+          hands-down experience with and while I won't claim mastery in all of them,
+          I've fearlessly delved into their realm, expanding my skills.<br /> I'm
           always looking to learn new things and improve my skills.
       </p>
       <motion.div style={{ scale }} className="container">

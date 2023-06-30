@@ -14,7 +14,6 @@ const AboutMe = () => {
   return (
     <AboutContainer className="">
       <AboutLeft>
-
         <img src={nerd} className="about__picture" />
         <p>Hey! I'm Allan.</p>
         <img src={Arrow} className="about__arrow" />
@@ -103,9 +102,10 @@ const AboutMe = () => {
           </WorkPlaces>
         </Places>
         <p>
-          I'm always excited to work on new projects & learn new things. I
-          believe in the power of open source and community and I'm always
-          looking collaborate with small businesses and startups.
+          I thrive on embracing fresh challenges and acquiring new knowledge.
+          I believe in the power of open source and community and I actively seek 
+          avenues for collaboration and contribution towards small businesses and
+          non-profits.
           <br />
         </p>
         <BashTerminal />

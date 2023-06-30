@@ -42,6 +42,7 @@ const Footer = () => {
             href="https://www.instagram.com/predominantlyallan/"
             target="_blank"
             rel="noopener noreferrer"
+            title="Instagram"
           >
             <AiOutlineInstagram size={50} />
           </a>
@@ -49,6 +50,7 @@ const Footer = () => {
             href="https://twitter.com/fernzallan14"
             target="_blank"
             rel="noopener noreferrer"
+            title="Twitter"
           >
             <AiOutlineTwitter size={50} />
           </a>
@@ -56,6 +58,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/allanmosesfernandes/"
             target="_blank"
             rel="noopener noreferrer"
+            title="LinkedIn"
           >
             <BiLogoLinkedin size={50} />
           </a>
