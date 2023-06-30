@@ -143,15 +143,23 @@ export const FirstFoldContainer = styled.div`
       height: 100%;
       position: absolute;
       z-index: -1;
-      background-image: url(${code1});
+      background-image: radial-gradient(
+          ellipse 25% 25% at 25% 25%,
+          #00c647 50%,
+          #0000 51%
+        ),
+        radial-gradient(ellipse 25% 25% at 75% 75%, #034524 50%, #0000 51%);
+      background-size: 20px 20px;
       border-radius: 10px;
       background-position: 0;
-      background-size: 200%;
+      /* background-size: 200%; */
       animation: ${backgroundAnimation} 30s linear infinite;
     }
 
     img {
       width: 80%;
+      display: flex;
+      margin: auto;
     }
   }
 `;

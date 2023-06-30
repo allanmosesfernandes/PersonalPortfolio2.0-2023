@@ -6,7 +6,7 @@ import Flight from "../../assets/images/home/flight.svg";
 import Circle from "../../assets/images/home/circleSVG.svg";
 import Scratch from "../../assets/images/home/scratch.png";
 import OrangeContainer from "./OrangeContainer";
-
+import {motion, useInView, animate } from "framer-motion";
 function FirstFold() {
   return (
     <Init>
@@ -35,8 +35,8 @@ function FirstFold() {
               making cool things that live on the internet.
             </p>
             <p>
-              I've been making websites for almost three years often
-              using pure Javascript, (S)CSS, jQuery and other random web tech.
+              I've been making websites for almost three years often using pure
+              Javascript, (S)CSS, jQuery and other random web tech.
             </p>
             <p>
               {" "}
@@ -47,7 +47,18 @@ function FirstFold() {
         </div>
         <div className="firstFold__right">
           <div className="window-pane" />
-          <img src={nerd} alt="nerd" />
+          {/* how can I slow this down? */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <img src={nerd} alt="nerd" />
+          </motion.div>
         </div>
       </FirstFoldContainer>
       <OrangeContainer />
