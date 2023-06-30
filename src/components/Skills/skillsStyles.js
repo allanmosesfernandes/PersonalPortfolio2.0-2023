@@ -13,6 +13,7 @@ export const SkillsContainer = styled.div`
   font-family: "Fira Code", monospace;
   padding: 2rem;
   color: #000;
+
   .skills__title {
     font-size: var(--fs4);
     display: flex;
