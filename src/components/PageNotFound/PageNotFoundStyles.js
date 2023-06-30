@@ -5,6 +5,13 @@ export const StyledPageNotFound = styled.div`
     flex-direction: column;
     font-family: "Fira Code", monospace;
     font-size: var(--fs5);
+    @media only screen and (max-width: 768px) {
+      //code goes here
+      font-size: var(--fs2);
+      margin-top: 8rem;
+      margin-bottom: 3rem;
+      padding: 0 1rem;
+    }
 `;
 
 export const StyledIllustration = styled.div`
@@ -20,20 +27,34 @@ export const StyledIllustration = styled.div`
     height: 200px;
     position: relative;
   }
+  @media only screen and (max-width: 768px) {
+    //code goes here
+    max-width: 100px;
+    max-height: 100px;
+
+    flex-direction: column-reverse;
+    margin-top: 20rem;
+
+    gap: 0;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
   .smiley {
     position: relative;
     cursor: pointer;
   }
-  //rotate animation 
-    @keyframes rotate {
+  //rotate animation
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
-        }
+      transform: rotate(360deg);
     }
-
+  }
 
   .abs {
     position: absolute;
