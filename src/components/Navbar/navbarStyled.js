@@ -162,6 +162,7 @@ export const StyledNavbar = styled.nav`
     padding: 0;
     margin: 0;
     border: none;
+    background-color: transparent !important;
     &:hover {
       background: none;
       border: none;
