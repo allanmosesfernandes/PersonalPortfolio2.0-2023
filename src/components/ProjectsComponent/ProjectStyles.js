@@ -28,14 +28,13 @@ export const ProjectsContainer = styled.div`
     }
     @media only screen and (max-width: 600px) {
       //code goes here
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
   }
   h1 {
     font-size: 3rem;
   }
-}
 `;
 
 export const BackLink = styled(Link)`
@@ -67,7 +66,13 @@ export const ProjectTable = styled.table`
     border-bottom: 1px solid white;
     padding: 1.5rem 2rem;
   }
-
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    th,
+    td {
+      font-size: 1.2rem;
+    }
+  }
   .project__link {
     position: relative;
 
