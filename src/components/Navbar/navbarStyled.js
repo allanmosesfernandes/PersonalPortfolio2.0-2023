@@ -38,8 +38,10 @@ export const MenuToggle = styled.div`
     margin: 0 2rem;
     .hamburger__icon {
       animation: none;
+      border: 2px solid var(--base-orange);
+      border-radius: 50%;
+      padding: 1rem;
       transition: all 0.5s ease-in-out;
-
       &.spin {
         transform: rotate(135deg);
       }

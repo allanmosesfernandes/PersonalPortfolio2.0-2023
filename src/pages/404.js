@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-filename-extension */
-import React from 'react';
+import React from "react";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
 
-function PageNotFound() {
+function FourOhFour() {
   return (
-    <div>PageNotFound</div>
+    <PageNotFound />
   );
 }
 
-export default PageNotFound;
+export default FourOhFour;
