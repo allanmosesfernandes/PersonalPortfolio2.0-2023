@@ -7,7 +7,7 @@ import Neue from "../assets/fonts/PPMori-Regular.otf";
 const GlobalStyle = createGlobalStyle`
 
 :root {
-  --base-black:  #0C0404;
+  --base-black:  #000;
   --base-orange: #F9A600;
   --base-gray: #4B5563;
     font-size: 10px;

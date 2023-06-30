@@ -108,7 +108,7 @@ export const StyledNavbar = styled.nav`
 
   .nav-overlay {
     position: fixed;
-    top: -100%;
+    top: -150%;
     background-color: #18181c;
     left: 0;
     z-index: 1;

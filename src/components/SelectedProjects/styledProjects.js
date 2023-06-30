@@ -8,10 +8,18 @@ export const ProjectsContainer = styled.div`
   font-family: "Fira Code", monospace;
   .projects__title {
     font-size: var(--fs4);
+    font-family: "Space mono", monospace;
     margin: 3rem 0 0 0;
     padding: 3rem 0;
     border-top: 2px solid var(--base-gray);
     border-bottom: 2px solid var(--base-gray);
+  }
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    .projects__title {
+      font-size: var(--fs3);
+      padding: 3rem 1rem;
+    }
   }
 `;
 
@@ -62,6 +70,7 @@ export const ProjectSingle = styled.div`
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
+    line-height: 1.5;
     .block_title {
       font-style: italic;
     }
