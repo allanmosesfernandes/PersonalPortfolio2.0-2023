@@ -13,33 +13,46 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   //function to change the color of the navbar
   const changeColor = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
+    if (typeof window !== "undefined") {
+      if (window.scrollY >= 80) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
     }
   };
   //function to toggle the hamburger menu
   const toggleHamburgerMenu = () => { setToggleHamburger(!toggleHamburger); };
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 768);
+      }
     };
     //function to handle the initial load
     const handleInitialLoad = () => {
-      setIsMobile(window.innerWidth <= 768);
-      setShowHamburger(window.innerWidth <= 768);
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 768);
+        setShowHamburger(window.innerWidth <= 768);
+      }
     };
 
     handleInitialLoad();
+    
     //add an event listener to the window object
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
+
   //add an event listener to the window object
-  window.addEventListener("scroll", changeColor);
+  
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeColor);
+  }
 
   return (
     <StyledNavbar className={navbar ? "fixed-navbar" : ""} >

@@ -8,19 +8,28 @@ function SingleProject(props) {
   // if screen width < 600 setBlinky to true
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1000) {
-        setBlinky(true);
-      } else {
-        setBlinky(false);
+      if (typeof window !== "undefined") {
+        // Code that uses the window object
+        if (window.innerWidth < 1000) {
+          setBlinky(true);
+        } else {
+          setBlinky(false);
+        }
       }
+
+
     };
 
     handleResize(); // Call it initially
-
-    window.addEventListener("resize", handleResize); // Listen for window resize events
-
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize); 
+      // Listen for window resize events
+    }
     return () => {
-      window.removeEventListener("resize", handleResize); // Clean up the event listener
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize); 
+      // Clean up the event listener
+      }
     };
   }, []);
 
