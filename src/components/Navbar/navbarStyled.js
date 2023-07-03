@@ -38,8 +38,10 @@ export const MenuToggle = styled.div`
     margin: 0 2rem;
     .hamburger__icon {
       animation: none;
+      border: 2px solid var(--base-orange);
+      border-radius: 50%;
+      padding: 1rem;
       transition: all 0.5s ease-in-out;
-
       &.spin {
         transform: rotate(135deg);
       }
@@ -106,7 +108,7 @@ export const StyledNavbar = styled.nav`
 
   .nav-overlay {
     position: fixed;
-    top: -100%;
+    top: -150%;
     background-color: #18181c;
     left: 0;
     z-index: 1;
@@ -160,6 +162,7 @@ export const StyledNavbar = styled.nav`
     padding: 0;
     margin: 0;
     border: none;
+    background-color: transparent !important;
     &:hover {
       background: none;
       border: none;

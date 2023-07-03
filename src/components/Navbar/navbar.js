@@ -97,7 +97,7 @@ function Navbar() {
       <div
         className="nav-overlay"
         style={{
-          top: toggleHamburger ? "0" : "-100%",
+          top: toggleHamburger ? "0" : "-150%",
           transitionDelay: toggleHamburger ? "0.5s" : "0s",
         }}>
         <StyledHamburgerList>
