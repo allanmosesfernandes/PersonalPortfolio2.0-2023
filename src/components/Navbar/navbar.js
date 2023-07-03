@@ -55,7 +55,7 @@ function Navbar() {
   }
 
   return (
-    <StyledNavbar className={navbar ? "fixed-navbar" : ""} >
+    <StyledNavbar className={navbar ? "fixed-navbar" : ""}>
       {isMobile ? (
         <>
           <Link to="/">
@@ -98,7 +98,8 @@ function Navbar() {
         style={{
           top: toggleHamburger ? "0" : "-150%",
           transitionDelay: toggleHamburger ? "0.5s" : "0s",
-        }}>
+        }}
+      >
         <StyledHamburgerList>
           <li className="hamburger__link">
             <Link
@@ -125,7 +126,12 @@ function Navbar() {
             </Link>
             <div className="hamburger__link__wrapper" />
           </li>
-
+          <li className="hamburger__link">
+            <a href="/resume.pdf" target="_blank">
+              Resume
+            </a>
+            <div className="hamburger__link__wrapper" />
+          </li>
         </StyledHamburgerList>
       </div>
     </StyledNavbar>
