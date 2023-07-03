@@ -1,10 +1,14 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from "react";
 import PageNotFound from "../components/PageNotFound/PageNotFound";
+import SEO from "../components/SEO";
 
 function FourOhFour() {
   return (
-    <PageNotFound />
+    <>
+      <SEO title={"404"} />
+      <PageNotFound />
+    </>
   );
 }
 

@@ -87,11 +87,10 @@ function Navbar() {
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
             <Link to="/projects">projects</Link>
-            {/* <Link to="/contact">contact</Link> */}
           </StyledNavbarLinks>
-          <Link to="/blog">
-            <Button>Blog</Button>
-          </Link>
+          <a href="/resume.pdf" target="_blank">
+            <Button>resume</Button>
+          </a>
         </>
       )}
       <div
