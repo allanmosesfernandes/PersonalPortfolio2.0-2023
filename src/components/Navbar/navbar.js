@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { MenuToggle, StyledHamburgerList, StyledNavbar, StyledNavbarLinks } from "./navbarStyled";
 import Button from "../Button/Button";
 import plus from "../../assets/images/alt/plus-sign.svg";
-import logo from "../../assets/images/home/logo.png";
+import logo from "../../assets/images/home/logo.svg";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
