@@ -20,6 +20,7 @@ import sanity from "../../assets/images/skills/sanity.svg";
 import firebase from "../../assets/images/skills/firebase.svg";
 import figma from "../../assets/images/skills/figma.svg";
 import gitIcon from "../../assets/images/skills/git-icon.svg";
+import tailwindcssIcon from "../../assets/images/skills/tailwindcss-icon.svg";
 import { useTransform, useViewportScroll } from "framer-motion";
 import {motion, useInView, animate } from "framer-motion";
 
@@ -30,14 +31,14 @@ function Skills() {
     <SkillsContainer className="wrapper">
       <div className="skills__title">
         <img src={Asterik} alt="Asterik" />
-          Skills & Tools
+        Skills & Tools
       </div>
       <p>
         <img src={Asterik} alt="Asterik" className="ill" />
-          Programming languages, frameworks, tools & products I've had
-          hands-down experience with and while I won't claim mastery in all of them,
-          I've fearlessly delved into their realm, expanding my skills.<br /> I'm
-          always looking to learn new things and improve my skills.
+        Programming languages, frameworks, tools & products I've had hands-down
+        experience with and while I won't claim mastery in all of them, I've
+        fearlessly delved into their realm, expanding my skills.
+        <br /> I'm always looking to learn new things and improve my skills.
       </p>
       <motion.div style={{ scale }} className="container">
         <Terminal>
@@ -79,14 +80,17 @@ function Skills() {
               />
               <p>Styled Components</p>
             </div>
+            
+            <div className="tech-grid__item">
+              <img src={tailwindcssIcon} alt="Bootstrap Icon" title="CSS3" />
+              <p>Tailwind CSS</p>
+            </div>
+
             <div className="tech-grid__item">
               <img src={sass} alt="SCSS Icon" title="SASS icon" />
               <p>Sass</p>
             </div>
-            <div className="tech-grid__item">
-              <img src={bootstrap} alt="Bootstrap Icon" title="CSS3" />
-              <p>Bootstrap</p>
-            </div>
+
             <div className="tech-grid__item">
               <img src={gitIcon} alt="Git Icon" title="Git" />
               <p>Git</p>
@@ -103,11 +107,14 @@ function Skills() {
               <img src={firebase} alt="Firebase Icon" title="Firebase" />
               <p>Firebase</p>
             </div>
-
             <div className="tech-grid__item">
+              <img src={bootstrap} alt="Bootstrap Icon" title="CSS3" />
+              <p>Bootstrap</p>
+            </div>
+            {/* <div className="tech-grid__item">
               <img src={sanity} alt="Sanity Icon" title="Sanity" />
               <p>Sanity</p>
-            </div>
+            </div> */}
             <div className="tech-grid__item">
               <img src={jquery} alt="jQuery Icon" title="jQuery" />
               <p>jQuery</p>
