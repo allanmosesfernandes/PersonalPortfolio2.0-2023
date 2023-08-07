@@ -62,7 +62,7 @@ module.exports = {
       options: {
         trackingId: "G-66DZ7RTMP9",
         pluginConfig: {
-          head: true,
+          head: false,
         },
       },
     },
