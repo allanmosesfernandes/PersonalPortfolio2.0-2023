@@ -122,7 +122,7 @@ function OrangeContainer() {
             rel="noopener noreferrer"
             title="Github Profile"
           >
-            <AiFillGithub size={70} />
+            <AiFillGithub size={50} />
           </a>
         </div>
         <div>
@@ -131,7 +131,7 @@ function OrangeContainer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GrLinkedinOption size={70} />
+            <GrLinkedinOption size={50} />
           </a>
         </div>
         <div>
@@ -140,7 +140,7 @@ function OrangeContainer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SiGmail size={70} />
+            <SiGmail size={50} />
           </a>
         </div>
       </StyledOrangeLeft>
