@@ -63,7 +63,7 @@ export const FirstFoldContainer = styled.div`
       .rel {
         position: relative;
         display: block;
-        width: 100%;
+        width: fit-content;
         margin: 1rem 0;
         font-size: var(--fs4);
         &:hover {
@@ -76,7 +76,7 @@ export const FirstFoldContainer = styled.div`
           position: absolute;
           left: -15px;
           top: -24px;
-          width: 60%;
+          width: 100%;
         }
       }
       .relative {
@@ -85,7 +85,7 @@ export const FirstFoldContainer = styled.div`
         margin: 0 1.5rem;
         img {
           position: absolute;
-          bottom: -30px;
+          bottom: -25px;
           left: 0px;
           width: 100%;
         }
@@ -128,14 +128,13 @@ export const FirstFoldContainer = styled.div`
     border-radius: 10px;
     position: relative;
     background-color: black;
-    //==make it in the shape of an airplane window==//
-    /* clip-path: ellipse(35% 50% at 50% 50%); */
     display: flex;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 99;
+    width: 30%;
     padding: 2rem;
     @media only screen and (max-width: 800px) {
       //code goes here
@@ -168,7 +167,7 @@ export const FirstFoldContainer = styled.div`
     }
 
     img {
-      width: 80%;
+      width: 200px;
       display: flex;
       margin: auto;
     }
@@ -215,7 +214,7 @@ export const FlightPath = styled.div`
       width: 30px;
       position: absolute;
       left: 0;
-      animation: ${flightAnimation} 10s linear infinite;
+      /* animation: ${flightAnimation} 10s linear infinite; */
     }
   }
   @media only screen and (max-width: 600px) {

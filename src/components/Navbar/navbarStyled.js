@@ -93,7 +93,7 @@ export const StyledNavbar = styled.nav`
   height: 12vh;
   z-index: 999;
   transition: all 0.2s ease-in;
-  background-color: transparent !important;
+  background: #000000 !important;
 
   &.fixed-navbar {
     position: fixed;
@@ -140,7 +140,7 @@ export const StyledNavbar = styled.nav`
   transition: all 0.2s ease-in;
   z-index: 999;
   border-bottom: 4px solid var(--base-orange);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   //blur the navbar
   h2 {
     font-weight: 500;

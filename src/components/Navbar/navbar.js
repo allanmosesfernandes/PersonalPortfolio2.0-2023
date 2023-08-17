@@ -38,7 +38,6 @@ function Navbar() {
     };
 
     handleInitialLoad();
-    
     //add an event listener to the window object
     if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize);

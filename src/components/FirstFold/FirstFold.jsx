@@ -29,7 +29,7 @@ function FirstFold() {
             <p>
               I like
               <span className="relative">
-                <img src={Scratch} alt="asd" />
+                <img src={Scratch} alt="asd" style={{width: "fit-content"}}/>
                 breaking
               </span>
               making cool things that live on the internet.
@@ -42,6 +42,10 @@ function FirstFold() {
               {" "}
               I'm currently messing around and trying to get better at NextJS &
               Node.js.
+            </p>
+            <p>
+              Focused on building accessible products while also genuinely
+              caring about user experience.
             </p>
           </div>
         </div>
