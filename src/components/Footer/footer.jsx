@@ -88,7 +88,7 @@ const Footer = () => {
             >
               Visual Studio Code{" "}
             </a>{" "}
-             were my trusty sidekicks in creating this website.
+            were my trusty sidekicks in creating this website.
             <br />
             <a
               href="https://www.gatsbyjs.com/"
@@ -117,6 +117,7 @@ const Footer = () => {
             was my trusty deploy soldier. <br />
           </p>
         </EditorsNote>
+        <a href="https://md5.gromweb.com/"></a>
       </ContactInfo>
     </FooterContainer>
   );

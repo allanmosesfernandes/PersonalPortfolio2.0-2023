@@ -87,6 +87,7 @@ function Navbar() {
           <StyledNavbarLinks>
             <Link to="/about">about</Link>
             <Link to="/projects">projects</Link>
+
           </StyledNavbarLinks>
           <a href="/resume.pdf" target="_blank">
             <Button>resume</Button>
