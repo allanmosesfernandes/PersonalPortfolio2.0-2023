@@ -52,6 +52,11 @@ export const FirstFoldContainer = styled.div`
       width: 100% !important;
     }
   }
+  @media only screen and (max-width: 600px) {
+    background-image: none;
+    background-color: #000000;
+    
+  }
   .firstFold__left {
     width: 60%;
     .body-copy {
@@ -77,6 +82,16 @@ export const FirstFoldContainer = styled.div`
           left: -15px;
           top: -24px;
           width: 100%;
+        }
+        @media only screen and (max-width: 600px) {
+          .rel {
+            color: #000000;
+            width: 180px;
+            border-bottom: 1px solid var(--base-orange);
+          }
+          img {
+            display: none;
+          }
         }
       }
       .relative {
@@ -113,12 +128,35 @@ export const FirstFoldContainer = styled.div`
           font-size: var(--fs2);
           font-weight: bold;
           text-align: center;
-
+          
           img {
             left: 30px;
             top: -16px;
             width: 80%;
           }
+        }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      //code goes here
+
+      .body-copy {
+        font-size: var(--fs1-5);
+        text-align: center;
+        color: #ffffff;
+        .rel {
+          width: 200px;
+          text-align: left;
+          border-bottom: 2px dashed var(--base-orange);
+          
+          img {
+            left: 30px;
+            top: -16px;
+            width: 80%;
+          }
+        }
+        p {
+          text-align: left;
         }
       }
     }
@@ -172,6 +210,7 @@ export const FirstFoldContainer = styled.div`
       margin: auto;
     }
   }
+  
 `;
 
 export const FirstFold = styled.div`

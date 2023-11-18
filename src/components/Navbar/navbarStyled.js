@@ -125,6 +125,7 @@ export const StyledNavbar = styled.nav`
   }
   @media only screen and (max-width: 600px) {
     //code goes here
+    height: 9vh;
     background-color: #000000 !important;
     position: fixed;
     .logo {

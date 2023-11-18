@@ -45,6 +45,7 @@
     "react-portable-text": "^0.6.0",
     "react-twitter-embed": "^4.0.4",
     "sanity-image": "^0.1.6",
+    "shallowequal": "^1.1.0",
     "styled-components": "^5.3.11",
     "typewriter-effect": "^2.20.1"
   },
