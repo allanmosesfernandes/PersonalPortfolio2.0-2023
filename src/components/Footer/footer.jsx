@@ -16,7 +16,7 @@ import { useState } from "react";
 
 const Footer = () => {
   const [copy, setCopy] = useState(false);
-  const copyEmail = "fernzallan14@gmail.com";
+  const copyEmail = "hello@allanfernandes.dev";
   const handleCopy = () => {
     setCopy(true);
     //reset after 3 seconds
