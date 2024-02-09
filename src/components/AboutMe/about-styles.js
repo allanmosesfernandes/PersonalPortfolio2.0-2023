@@ -31,6 +31,11 @@ export const AboutLeft = styled.div`
   margin-top: 10rem;
   font-size: 1.5rem;
   font-family: "Space Mono", monospace;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 5rem;
+    padding: 0 1rem;
+  }
   a {
     border-bottom: 1px dashed var(--base-orange);
     letter-spacing: 0rem;
@@ -110,6 +115,12 @@ export const Places = styled.div`
 export const WorkPlaces = styled.div`
     display: flex;
     gap: 2rem;
+    @media only screen and (max-width: 768px) {
+      //code goes here
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+    }
     a {
         border-bottom: none;
 

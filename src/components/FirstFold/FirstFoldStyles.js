@@ -27,8 +27,6 @@ export const AsterikIcon = styled.img`
 `;
 
 export const FirstFoldContainer = styled.div`
-  background-color: #ffffff;
-  background-image: url(${Grainy});
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
@@ -38,8 +36,9 @@ export const FirstFoldContainer = styled.div`
   padding: 2rem;
   height: 100%;
   z-index: 2;
-  height: 70vh;
-
+  height: 100%;
+  color: #ffffff;
+  margin: 4rem auto;
   @media only screen and (max-width: 768px) {
     //code goes here
     flex-direction: column;
@@ -62,9 +61,8 @@ export const FirstFoldContainer = styled.div`
     .body-copy {
       font-size: var(--fs2);
       font-family: "Fira Code";
-      color: #000000;
+      color: #ffffff;
       position: relative;
-      cursor: url(${CursorBlack}), auto;
       .rel {
         position: relative;
         display: block;

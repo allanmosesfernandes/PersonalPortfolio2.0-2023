@@ -70,6 +70,7 @@ const StyledOrangeRight = styled.div`
   gap: 2rem;
   width: 100%;
   color: #000000;
+  padding: 2rem;
   background-color: var(--base-orange);
   border-radius: 10px;
   font-weight: 500;
@@ -114,7 +115,7 @@ const StyledOrangeRight = styled.div`
 function OrangeContainer() {
   return (
     <StyledOrangeContainer className="wrapper">
-      <StyledOrangeLeft>
+      {/* <StyledOrangeLeft>
         <div>
           <a
             href="https://github.com/allanmosesfernandes"
@@ -143,7 +144,7 @@ function OrangeContainer() {
             <SiGmail size={50} />
           </a>
         </div>
-      </StyledOrangeLeft>
+      </StyledOrangeLeft> */}
       <StyledOrangeRight onClick={redirect}>
         <Link to="/projects" className="projectsBtn">
           All Projects

@@ -94,7 +94,7 @@ export const StyledNavbar = styled.nav`
   z-index: 999;
   transition: all 0.2s ease-in;
   background: #000000 !important;
-
+  padding: 0 1.5rem;
   &.fixed-navbar {
     position: fixed;
     top: 0;
@@ -123,18 +123,10 @@ export const StyledNavbar = styled.nav`
     animation: none;
     opacity: 1;
   }
-  @media only screen and (max-width: 600px) {
-    //code goes here
-    height: 9vh;
-    background-color: #000000 !important;
-    position: fixed;
-    .logo {
-      margin-left: 2rem;
-    }
-  }
+
   display: flex;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem !important;
   font-family: "Fira Code", monospace;
   font-size: 2rem;
   justify-content: space-between;
@@ -157,7 +149,17 @@ export const StyledNavbar = styled.nav`
     animation: ${rotateAnimation} 60s infinite linear;
     /* Adjust the duration (10s) for desired speed */
   }
-
+  @media only screen and (max-width: 600px) {
+    //code goes here
+    height: 9vh;
+    background-color: #000000 !important;
+    position: fixed;
+    .logo {
+      margin-left: 2rem;
+    }
+    padding: 1rem 0rem !important;
+  }
+  
   @media screen and (max-width: 768px) {
     background: none;
     padding: 0;

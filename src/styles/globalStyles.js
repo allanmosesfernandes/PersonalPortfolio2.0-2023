@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import customCursor from "../assets/images/home/icons8-cursor.svg";
-import blackCursor from "../assets/images/home/cursorblack.svg";
 import Grid from "../assets/images/home/grid.svg";
 import Neue from "../assets/fonts/PPMori-Regular.otf";
 
@@ -28,10 +27,6 @@ const GlobalStyle = createGlobalStyle`
 }
 html {
   cursor: url(${customCursor}), auto;
-}
-
-#blackCursor {
-  cursor: url(${blackCursor}), auto !important;
 }
 
 @font-face {
